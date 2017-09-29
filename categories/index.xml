@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Experiences of a developer</title>
+    <link>https://bleathem.github.io/categories/</link>
+    <description>Recent content in Categories on Experiences of a developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://bleathem.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Conferences</title>
+      <link>https://bleathem.github.io/categories/conferences/</link>
+      <pubDate>Tue, 07 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://bleathem.github.io/categories/conferences/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java EE</title>
+      <link>https://bleathem.github.io/categories/java-ee/</link>
+      <pubDate>Tue, 20 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://bleathem.github.io/categories/java-ee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Javascript</title>
+      <link>https://bleathem.github.io/categories/javascript/</link>
+      <pubDate>Mon, 19 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://bleathem.github.io/categories/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mobile</title>
+      <link>https://bleathem.github.io/categories/mobile/</link>
+      <pubDate>Thu, 05 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://bleathem.github.io/categories/mobile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PatternFly</title>
+      <link>https://bleathem.github.io/categories/patternfly/</link>
+      <pubDate>Tue, 30 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://bleathem.github.io/categories/patternfly/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RichFaces</title>
+      <link>https://bleathem.github.io/categories/richfaces/</link>
+      <pubDate>Tue, 20 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://bleathem.github.io/categories/richfaces/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Seam</title>
+      <link>https://bleathem.github.io/categories/seam/</link>
+      <pubDate>Wed, 07 Sep 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://bleathem.github.io/categories/seam/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tools</title>
+      <link>https://bleathem.github.io/categories/tools/</link>
+      <pubDate>Tue, 15 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://bleathem.github.io/categories/tools/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
