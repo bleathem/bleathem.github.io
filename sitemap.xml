@@ -768,14 +768,14 @@
   </url>
   
   <url>
-    <loc>https://bleathem.github.io/categories/javascript/</loc>
-    <lastmod>2015-10-19T00:00:00+00:00</lastmod>
+    <loc>https://bleathem.github.io/tags/javascript/</loc>
+    <lastmod>2015-01-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://bleathem.github.io/tags/javascript/</loc>
-    <lastmod>2015-01-26T00:00:00+00:00</lastmod>
+    <loc>https://bleathem.github.io/categories/javascript/</loc>
+    <lastmod>2015-10-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -786,14 +786,14 @@
   </url>
   
   <url>
-    <loc>https://bleathem.github.io/categories/mobile/</loc>
-    <lastmod>2015-02-05T00:00:00+00:00</lastmod>
+    <loc>https://bleathem.github.io/tags/mobile/</loc>
+    <lastmod>2012-07-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://bleathem.github.io/tags/mobile/</loc>
-    <lastmod>2012-07-13T00:00:00+00:00</lastmod>
+    <loc>https://bleathem.github.io/categories/mobile/</loc>
+    <lastmod>2015-02-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -918,13 +918,13 @@
   </url>
   
   <url>
-    <loc>https://bleathem.github.io/categories/richfaces/</loc>
+    <loc>https://bleathem.github.io/tags/richfaces/</loc>
     <lastmod>2015-01-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://bleathem.github.io/tags/richfaces/</loc>
+    <loc>https://bleathem.github.io/categories/richfaces/</loc>
     <lastmod>2015-01-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -948,13 +948,13 @@
   </url>
   
   <url>
-    <loc>https://bleathem.github.io/categories/seam/</loc>
+    <loc>https://bleathem.github.io/tags/seam/</loc>
     <lastmod>2011-09-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://bleathem.github.io/tags/seam/</loc>
+    <loc>https://bleathem.github.io/categories/seam/</loc>
     <lastmod>2011-09-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -1045,13 +1045,13 @@
   
   <url>
     <loc>https://bleathem.github.io/tags/widgets/</loc>
-    <lastmod>2014-03-11T00:00:00+00:00</lastmod>
+    <lastmod>2013-06-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://bleathem.github.io/tags/widgets/</loc>
-    <lastmod>2013-06-07T00:00:00+00:00</lastmod>
+    <lastmod>2014-03-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
