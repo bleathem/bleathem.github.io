@@ -6,10 +6,22 @@
     <description>Recent content on Experiences of a developer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 30 May 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Oct 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://new.bleathem.ca/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>And Now Hugo</title>
+      <link>https://new.bleathem.ca/blog/and-now-hugo/</link>
+      <pubDate>Tue, 03 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://new.bleathem.ca/blog/and-now-hugo/</guid>
+      <description>It seems like just yesterday that I found myself awestruck with awestruct, and yet here I am today reviving my blog with a new site building tool called Hugo. The motivation for this was two-fold.
+  My awestruct/Asciidoctor gem configuration had fallen out of date, and needed some TLC to get working again.
+  I wanted to learn Go.
+   While I&amp;#8217;ve successfully migrated my blog/site to hugo, I have not managed to realize goal 2 and learn about Go in the process!</description>
+    </item>
     
     <item>
       <title>Patternfly Roadmap Update</title>
