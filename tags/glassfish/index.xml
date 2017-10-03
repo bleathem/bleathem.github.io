@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Glassfish on Experiences of a developer</title>
-    <link>https://bleathem.github.io/tags/glassfish/</link>
+    <link>https://new.bleathem.ca/tags/glassfish/</link>
     <description>Recent content in Glassfish on Experiences of a developer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 Jul 2010 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 20 Jan 2010 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://bleathem.github.io/tags/glassfish/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://new.bleathem.ca/tags/glassfish/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>My Glassfish support subscription came through - finally</title>
-      <link>https://bleathem.github.io/blog/my-glassfish-support-subscription-came-through---finally/</link>
-      <pubDate>Thu, 15 Jul 2010 00:00:00 +0000</pubDate>
+      <title>Glassfish V2 and V3 on the same host, behind mod_jk</title>
+      <link>https://new.bleathem.ca/blog/glassfish-v2-and-v3-on-the-same-host-behind-mod_jk/</link>
+      <pubDate>Wed, 20 Jan 2010 00:00:00 +0000</pubDate>
       
-      <guid>https://bleathem.github.io/blog/my-glassfish-support-subscription-came-through---finally/</guid>
-      <description>Call me eager, call me insane, I had a JavaEE 6 app up and running in production on Glassfish 3.0 one month after it&amp;rsquo;s release. The improvements in JSF 2 and CDI were too compelling for me to hold off adopting, and sure enough, the application was quick and painless to develop.
-I did however pay a price for being an early adopter - a Glassfish / Weld bug was preventing my JSF login pages from working.</description>
+      <guid>https://new.bleathem.ca/blog/glassfish-v2-and-v3-on-the-same-host-behind-mod_jk/</guid>
+      <description>I&amp;rsquo;ve jumped on the JavaEE 6 bandwagon, with one application already in production. The developer productivity improvements in JavaEE6/Glassfish V3 are tremendous. The only downside is that I still have some JavaEE 5 applications in production. The JavaEE 5 apps can&amp;rsquo;t migrate to JavaEE 6 until Icefaces supports JSF 1.2.
+One workaround to this is to bundle the JSF 1.2 implementation with your application, then configure the classloader using the sun-web.</description>
     </item>
     
   </channel>
