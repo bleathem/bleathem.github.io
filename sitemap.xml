@@ -23,6 +23,16 @@
   </url>
   
   <url>
+    <loc>https://www.bleathem.ca/talk-list/2016-devnation/write-powerful-javascript-modules/</loc>
+    <lastmod>2016-06-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.bleathem.ca/talk-list/2016-devnation/developer-meet-designer/</loc>
+    <lastmod>2016-06-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.bleathem.ca/blog/error-handling-in-a-request/response-model-with-the-mediator-pattern/</loc>
     <lastmod>2015-10-19T00:00:00+00:00</lastmod>
   </url>
@@ -35,6 +45,11 @@
   <url>
     <loc>https://www.bleathem.ca/blog/rx.js-session-at-devnation/</loc>
     <lastmod>2015-06-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.bleathem.ca/talk-list/2015-devnation/reactive/</loc>
+    <lastmod>2015-06-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -103,6 +118,11 @@
   </url>
   
   <url>
+    <loc>https://www.bleathem.ca/talk-list/2014-devnation/jquery-ui-widgets/</loc>
+    <lastmod>2014-04-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.bleathem.ca/blog/richfaces-security-advisory-cve-2014-0335/</loc>
     <lastmod>2014-04-11T00:00:00+00:00</lastmod>
   </url>
@@ -165,6 +185,11 @@
   <url>
     <loc>https://www.bleathem.ca/blog/spoke-on-polyglot-widgets-at-jaxconf-2013/</loc>
     <lastmod>2013-06-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.bleathem.ca/talk-list/2013-jaxconf/polyframework-webapps/</loc>
+    <lastmod>2013-06-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -253,6 +278,21 @@
   </url>
   
   <url>
+    <loc>https://www.bleathem.ca/talk-list/2012-javaone/jsf-components/</loc>
+    <lastmod>2012-10-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.bleathem.ca/talk-list/2012-javaone/richfaces-mobile/</loc>
+    <lastmod>2012-10-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.bleathem.ca/talk-list/2012-javaone/testing-jsf/</loc>
+    <lastmod>2012-10-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.bleathem.ca/blog/jsf-testing-session-at-java-one/</loc>
     <lastmod>2012-09-28T00:00:00+00:00</lastmod>
   </url>
@@ -268,8 +308,28 @@
   </url>
   
   <url>
+    <loc>https://www.bleathem.ca/talk-list/2012-jaxconf/jsf-components/</loc>
+    <lastmod>2012-07-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.bleathem.ca/talk-list/2012-jaxconf/richfaces-mobile/</loc>
+    <lastmod>2012-07-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.bleathem.ca/blog/jbw-2012-and-richfaces-mobile/</loc>
     <lastmod>2012-07-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.bleathem.ca/talk-list/2012-jbw/richfaces-mobile/</loc>
+    <lastmod>2012-06-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.bleathem.ca/talk-list/2012-judcon/jsf-components-lightning/</loc>
+    <lastmod>2012-06-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -390,6 +450,16 @@
   <url>
     <loc>https://www.bleathem.ca/blog/seam-faces-3.0.2.final-released/</loc>
     <lastmod>2011-08-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.bleathem.ca/talk-list/2011-jaxconf/seamfaces/</loc>
+    <lastmod>2011-06-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.bleathem.ca/talk-list/2011-judcon/seamfaces/</loc>
+    <lastmod>2011-05-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -691,13 +761,13 @@
   
   <url>
     <loc>https://www.bleathem.ca/tags/glassfish/</loc>
-    <lastmod>2010-01-20T00:00:00+00:00</lastmod>
+    <lastmod>2010-07-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.bleathem.ca/tags/glassfish/</loc>
-    <lastmod>2010-07-15T00:00:00+00:00</lastmod>
+    <lastmod>2010-01-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -780,14 +850,14 @@
   </url>
   
   <url>
-    <loc>https://www.bleathem.ca/categories/javascript/</loc>
-    <lastmod>2015-10-19T00:00:00+00:00</lastmod>
+    <loc>https://www.bleathem.ca/tags/javascript/</loc>
+    <lastmod>2015-01-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.bleathem.ca/tags/javascript/</loc>
-    <lastmod>2015-01-26T00:00:00+00:00</lastmod>
+    <loc>https://www.bleathem.ca/categories/javascript/</loc>
+    <lastmod>2015-10-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -798,14 +868,14 @@
   </url>
   
   <url>
-    <loc>https://www.bleathem.ca/categories/mobile/</loc>
-    <lastmod>2015-02-05T00:00:00+00:00</lastmod>
+    <loc>https://www.bleathem.ca/tags/mobile/</loc>
+    <lastmod>2012-07-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.bleathem.ca/tags/mobile/</loc>
-    <lastmod>2012-07-13T00:00:00+00:00</lastmod>
+    <loc>https://www.bleathem.ca/categories/mobile/</loc>
+    <lastmod>2015-02-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -930,13 +1000,13 @@
   </url>
   
   <url>
-    <loc>https://www.bleathem.ca/categories/richfaces/</loc>
+    <loc>https://www.bleathem.ca/tags/richfaces/</loc>
     <lastmod>2015-01-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.bleathem.ca/tags/richfaces/</loc>
+    <loc>https://www.bleathem.ca/categories/richfaces/</loc>
     <lastmod>2015-01-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -960,13 +1030,13 @@
   </url>
   
   <url>
-    <loc>https://www.bleathem.ca/categories/seam/</loc>
+    <loc>https://www.bleathem.ca/tags/seam/</loc>
     <lastmod>2011-09-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.bleathem.ca/tags/seam/</loc>
+    <loc>https://www.bleathem.ca/categories/seam/</loc>
     <lastmod>2011-09-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -1014,6 +1084,12 @@
   </url>
   
   <url>
+    <loc>https://www.bleathem.ca/talk-list/</loc>
+    <lastmod>2016-06-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.bleathem.ca/tags/testing/</loc>
     <lastmod>2012-10-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -1057,13 +1133,13 @@
   
   <url>
     <loc>https://www.bleathem.ca/tags/widgets/</loc>
-    <lastmod>2014-03-11T00:00:00+00:00</lastmod>
+    <lastmod>2013-06-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.bleathem.ca/tags/widgets/</loc>
-    <lastmod>2013-06-07T00:00:00+00:00</lastmod>
+    <lastmod>2014-03-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

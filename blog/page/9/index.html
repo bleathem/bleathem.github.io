@@ -38,7 +38,7 @@
 
 
 
-<meta property="og:updated_time" content="2014-01-27T00:00:00&#43;00:00"/>
+<meta property="og:updated_time" content="2011-03-27T00:00:00&#43;00:00"/>
 
 
 
@@ -129,6 +129,12 @@ ga('send', 'pageview');
                 </li>
             
                 <li>
+                    <a href="/talk-list/">
+                            <i class="fa fa-list">&nbsp;</i>Talks
+                    </a>
+                </li>
+            
+                <li>
                     <a href="/categories/">
                             <i class="fa fa-sitemap">&nbsp;</i>Categories
                     </a>
@@ -199,6 +205,14 @@ ga('send', 'pageview');
                     </li>
                 
                     <li>
+                        <a href="/talk-list/">
+                            <h3>
+                                <i class="fa fa-list">&nbsp;</i>Talks
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
                         <a href="/categories/">
                             <h3>
                                 <i class="fa fa-sitemap">&nbsp;</i>Categories
@@ -251,7 +265,7 @@ ga('send', 'pageview');
     <header>
     <div class="title">
         
-            <h2><a href="https://www.bleathem.ca/blog/richfaces-4.3.5.final-release-announcement/">RichFaces 4.3.5.Final Release Announcement</a></h2>
+            <h2><a href="https://www.bleathem.ca/blog/view-configuration-with-seam-3-faces---the-introduction/">View Configuration with Seam 3 Faces - the Introduction</a></h2>
         
         
     </div>
@@ -259,8 +273,8 @@ ga('send', 'pageview');
         
 
         <time class="published"
-            datetime='2014-01-27'>
-            January 27, 2014</time>
+            datetime='2011-03-27'>
+            March 27, 2011</time>
         <span class="author">Brian Leathem</span>
         
             <p>4 minute read</p>
@@ -284,18 +298,18 @@ ga('send', 'pageview');
 
         
 
-        <a href="https://www.bleathem.ca/blog/richfaces-4.3.5.final-release-announcement/" class="image featured">
+        <a href="https://www.bleathem.ca/blog/view-configuration-with-seam-3-faces---the-introduction/" class="image featured">
             <img src="/" alt="" />
         </a>
     
 
 
-    <p>We are happy to release an update to our stable branch with the release of RichFaces 4.3.5.Final. This 5th micro release of the RichFaces 4.3 release series provides a number of bug fixes while we concurrently work on RichFaces 5.
- To try out this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom.xml to 4.3.5.Final. For more information on setting up a RichFaces 4 application, refer to our getting started guide.</p>
+    <p>In Seam Faces we&rsquo;ve provided JSF developers with a mechanism to centrally configure various aspects of their JSF views. Concerns like transaction control and view security are currently supported, and support for URL rewriting, XSRF attack prevention, and JSF navigation is in the planning stage.
+The end-goal is to support view configuration via multiple sources (including some support for &lt;f:metadata&gt; child tags). For now we provide type-safe configuration using annotations on enums.</p>
 
     <footer>
         <ul class="actions">
-            <li><a href="https://www.bleathem.ca/blog/richfaces-4.3.5.final-release-announcement/" class="button big">Continue Reading</a></li>
+            <li><a href="https://www.bleathem.ca/blog/view-configuration-with-seam-3-faces---the-introduction/" class="button big">Continue Reading</a></li>
         </ul>
         <ul class="stats">
     
@@ -315,7 +329,7 @@ ga('send', 'pageview');
                     
 
                     
-                        Categories
+                        Category
                     
                 
             </li>
@@ -325,8 +339,6 @@ ga('send', 'pageview');
     
     
         <li><a href='/categories/java-ee'>Java EE</a></li>
-    
-        <li><a href='/categories/richfaces'>RichFaces</a></li>
     
 </ul>
 
@@ -338,7 +350,7 @@ ga('send', 'pageview');
     <header>
     <div class="title">
         
-            <h2><a href="https://www.bleathem.ca/blog/richfaces-5.0.0.alpha2-release-announcement/">RichFaces 5.0.0.Alpha2 Release Announcement</a></h2>
+            <h2><a href="https://www.bleathem.ca/blog/updating-weld-in-glassfish-3.1/">Updating Weld in Glassfish 3.1</a></h2>
         
         
     </div>
@@ -346,11 +358,11 @@ ga('send', 'pageview');
         
 
         <time class="published"
-            datetime='2013-12-11'>
-            December 11, 2013</time>
+            datetime='2011-02-16'>
+            February 16, 2011</time>
         <span class="author">Brian Leathem</span>
         
-            <p>6 minute read</p>
+            <p>2 minute read</p>
         
         
     </div>
@@ -371,18 +383,17 @@ ga('send', 'pageview');
 
         
 
-        <a href="https://www.bleathem.ca/blog/richfaces-5.0.0.alpha2-release-announcement/" class="image featured">
+        <a href="https://www.bleathem.ca/blog/updating-weld-in-glassfish-3.1/" class="image featured">
             <img src="/" alt="" />
         </a>
     
 
 
-    <p>RichFaces 5.0.0.Alpha2 is now available for download. This second alpha release of our RichFaces 5 effort is significant as it brings in our new component architecture, new components, a further refinement in our approach to testing, and the beginnings of a new look and feel. We&#8217;ll dive further into each of these topics below.
- To try out this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom.</p>
+    <p>Like any piece of software, Weld, the reference implementation for JSR-299, is continually improving as bugs are discovered, and performance is optimized. However, since Weld is tightly coupled with your application server of choice, using the latest weld is slightly more complicated than just bundling a weld release with your web application. This post outlines the relatively painless process of updating the Weld implementation of Glassfish 3.1 to use the latest SNAPSHOT, or any later release for that matter.</p>
 
     <footer>
         <ul class="actions">
-            <li><a href="https://www.bleathem.ca/blog/richfaces-5.0.0.alpha2-release-announcement/" class="button big">Continue Reading</a></li>
+            <li><a href="https://www.bleathem.ca/blog/updating-weld-in-glassfish-3.1/" class="button big">Continue Reading</a></li>
         </ul>
         <ul class="stats">
     
@@ -402,7 +413,7 @@ ga('send', 'pageview');
                     
 
                     
-                        Categories
+                        Category
                     
                 
             </li>
@@ -412,8 +423,6 @@ ga('send', 'pageview');
     
     
         <li><a href='/categories/java-ee'>Java EE</a></li>
-    
-        <li><a href='/categories/richfaces'>RichFaces</a></li>
     
 </ul>
 
@@ -425,7 +434,7 @@ ga('send', 'pageview');
     <header>
     <div class="title">
         
-            <h2><a href="https://www.bleathem.ca/blog/richwidgets-0.1-release-announcement/">RichWidgets 0.1 Release Announcement</a></h2>
+            <h2><a href="https://www.bleathem.ca/blog/restful-urls-with-jsf-2/">RESTful URLs, with JSF 2</a></h2>
         
         
     </div>
@@ -433,8 +442,8 @@ ga('send', 'pageview');
         
 
         <time class="published"
-            datetime='2013-12-11'>
-            December 11, 2013</time>
+            datetime='2011-01-29'>
+            January 29, 2011</time>
         <span class="author">Brian Leathem</span>
         
             <p>3 minute read</p>
@@ -458,18 +467,18 @@ ga('send', 'pageview');
 
         
 
-        <a href="https://www.bleathem.ca/blog/richwidgets-0.1-release-announcement/" class="image featured">
+        <a href="https://www.bleathem.ca/blog/restful-urls-with-jsf-2/" class="image featured">
             <img src="/" alt="" />
         </a>
     
 
 
-    <p>RichWidgets 0.1 is released and ready for download. The road to this first release was a long one, requiring us to get our first javascript project in order. Built with grunt, dependencies managed by bower, and our jasmine tests run by karma, RichWidgets is pure javascript project and as such should be equally accessible with all languages and frameworks targeting the web.
- To try out this release: You can download the distribution directly, or for bower users, point your bower.</p>
+    <p>JSF 2 introduced the ability to create RESTful URLs with the introduction of the &lt;f:viewParam&gt; tag. The tag is easy enough to use, you simply place it in the &lt;f:metadate&gt; tag, and configure the attributes to decode the url.
+&lt;f:metadata&gt; &lt;f:viewParam /&gt; &lt;/f:metadata&gt;  There are no words to explain how great a feature this is for JSF. The old &ldquo;every request is a POST&rdquo; theory didn&rsquo;t pan out. RESTful URLs are bookmarkable, and meaningful to end-users.</p>
 
     <footer>
         <ul class="actions">
-            <li><a href="https://www.bleathem.ca/blog/richwidgets-0.1-release-announcement/" class="button big">Continue Reading</a></li>
+            <li><a href="https://www.bleathem.ca/blog/restful-urls-with-jsf-2/" class="button big">Continue Reading</a></li>
         </ul>
         <ul class="stats">
     
@@ -489,7 +498,7 @@ ga('send', 'pageview');
                     
 
                     
-                        Categories
+                        Category
                     
                 
             </li>
@@ -500,7 +509,573 @@ ga('send', 'pageview');
     
         <li><a href='/categories/java-ee'>Java EE</a></li>
     
-        <li><a href='/categories/javascript'>Javascript</a></li>
+</ul>
+
+    </footer>
+</article>
+
+        
+            <article class="post">
+    <header>
+    <div class="title">
+        
+            <h2><a href="https://www.bleathem.ca/blog/viewaccessscope---why-its-useful/">ViewAccessScope - why it&#39;s useful</a></h2>
+        
+        
+    </div>
+    <div class="meta">
+        
+
+        <time class="published"
+            datetime='2010-12-17'>
+            December 17, 2010</time>
+        <span class="author">Brian Leathem</span>
+        
+            <p>2 minute read</p>
+        
+        
+    </div>
+</header>
+
+    
+    
+
+    
+        
+        
+
+
+
+
+    
+
+
+        
+
+        <a href="https://www.bleathem.ca/blog/viewaccessscope---why-its-useful/" class="image featured">
+            <img src="/" alt="" />
+        </a>
+    
+
+
+    <p>At first the conversation scope introduced with CDI seemed like it would be incredibly useful. Unfortunately, working with conversations ended up being more difficult than expected. Details of why this is, is fodder for another post.
+I ended up often using the JSF ViewScope, exposed as a CDI scope though the Seam Faces CDI extension. When used in conjunction with JSF viewParams to propagate information between pages, the result is a book-markable end user experience.</p>
+
+    <footer>
+        <ul class="actions">
+            <li><a href="https://www.bleathem.ca/blog/viewaccessscope---why-its-useful/" class="button big">Continue Reading</a></li>
+        </ul>
+        <ul class="stats">
+    
+        
+
+        
+        
+            <li>
+                
+                
+                    
+
+                    
+
+                    
+                        <i class="fa fa-sitemap">&nbsp;</i>
+                    
+
+                    
+                        Category
+                    
+                
+            </li>
+        
+    
+
+    
+    
+        <li><a href='/categories/java-ee'>Java EE</a></li>
+    
+</ul>
+
+    </footer>
+</article>
+
+        
+            <article class="post">
+    <header>
+    <div class="title">
+        
+            <h2><a href="https://www.bleathem.ca/blog/cdi-does-events-too/">CDI does events too!</a></h2>
+        
+        
+    </div>
+    <div class="meta">
+        
+
+        <time class="published"
+            datetime='2010-11-20'>
+            November 20, 2010</time>
+        <span class="author">Brian Leathem</span>
+        
+            <p>2 minute read</p>
+        
+        
+    </div>
+</header>
+
+    
+    
+
+    
+        
+        
+
+
+
+
+    
+
+
+        
+
+        <a href="https://www.bleathem.ca/blog/cdi-does-events-too/" class="image featured">
+            <img src="/" alt="" />
+        </a>
+    
+
+
+    <p>CDI is the new programming model introduced with Java EE 6. An acronym for Contexts and Dependency Injection, CDI advertises well two of the programming paradigms it aims to solve. But there is another, often overlooked sibling: Event handling. While I&rsquo;d heard it mentioned in the context of CDI, I&rsquo;d never really paid much attention - I was probably too busy trying to wrap my head around Conversations, and how CDI provides Dependency Injection.</p>
+
+    <footer>
+        <ul class="actions">
+            <li><a href="https://www.bleathem.ca/blog/cdi-does-events-too/" class="button big">Continue Reading</a></li>
+        </ul>
+        <ul class="stats">
+    
+        
+
+        
+        
+            <li>
+                
+                
+                    
+
+                    
+
+                    
+                        <i class="fa fa-sitemap">&nbsp;</i>
+                    
+
+                    
+                        Category
+                    
+                
+            </li>
+        
+    
+
+    
+    
+        <li><a href='/categories/java-ee'>Java EE</a></li>
+    
+</ul>
+
+    </footer>
+</article>
+
+        
+            <article class="post">
+    <header>
+    <div class="title">
+        
+            <h2><a href="https://www.bleathem.ca/blog/my-glassfish-support-subscription-came-through---finally/">My Glassfish support subscription came through - finally</a></h2>
+        
+        
+    </div>
+    <div class="meta">
+        
+
+        <time class="published"
+            datetime='2010-07-15'>
+            July 15, 2010</time>
+        <span class="author">Brian Leathem</span>
+        
+            <p>2 minute read</p>
+        
+        
+    </div>
+</header>
+
+    
+    
+
+    
+        
+        
+
+
+
+
+    
+
+
+        
+
+        <a href="https://www.bleathem.ca/blog/my-glassfish-support-subscription-came-through---finally/" class="image featured">
+            <img src="/" alt="" />
+        </a>
+    
+
+
+    <p>Call me eager, call me insane, I had a JavaEE 6 app up and running in production on Glassfish 3.0 one month after it&rsquo;s release. The improvements in JSF 2 and CDI were too compelling for me to hold off adopting, and sure enough, the application was quick and painless to develop.
+I did however pay a price for being an early adopter - a Glassfish / Weld bug was preventing my JSF login pages from working.</p>
+
+    <footer>
+        <ul class="actions">
+            <li><a href="https://www.bleathem.ca/blog/my-glassfish-support-subscription-came-through---finally/" class="button big">Continue Reading</a></li>
+        </ul>
+        <ul class="stats">
+    
+        
+
+        
+        
+            <li>
+                
+                
+                    
+
+                    
+
+                    
+                        <i class="fa fa-sitemap">&nbsp;</i>
+                    
+
+                    
+                        Category
+                    
+                
+            </li>
+        
+    
+
+    
+    
+        <li><a href='/categories/java-ee'>Java EE</a></li>
+    
+</ul>
+
+    </footer>
+</article>
+
+        
+            <article class="post">
+    <header>
+    <div class="title">
+        
+            <h2><a href="https://www.bleathem.ca/blog/jsf-validation-failed-notice/">JSF Validation Failed Notice</a></h2>
+        
+        
+    </div>
+    <div class="meta">
+        
+
+        <time class="published"
+            datetime='2010-06-25'>
+            June 25, 2010</time>
+        <span class="author">Brian Leathem</span>
+        
+            <p>1 minute read</p>
+        
+        
+    </div>
+</header>
+
+    
+    
+
+    
+        
+        
+
+
+
+
+    
+
+
+        
+
+        <a href="https://www.bleathem.ca/blog/jsf-validation-failed-notice/" class="image featured">
+            <img src="/" alt="" />
+        </a>
+    
+
+
+    <p>Here&rsquo;s how I show a notice on a JSF 2 page indicating that the JSF 2 postback failed due to validation errors. The following facelet snippet is rendered only when validation fails:
+&lt;h:outputtext styleclass=&quot;errorMessage globalMessage&quot; value=&quot;Request <em>not</em> saved due to input errors&quot; rendered=&quot;#{facesContext.validationFailed}&quot; /&gt;  The user then knows they should look through the page to correct the individually marked validation failures.</p>
+
+    <footer>
+        <ul class="actions">
+            <li><a href="https://www.bleathem.ca/blog/jsf-validation-failed-notice/" class="button big">Continue Reading</a></li>
+        </ul>
+        <ul class="stats">
+    
+        
+
+        
+        
+            <li>
+                
+                
+                    
+
+                    
+
+                    
+                        <i class="fa fa-sitemap">&nbsp;</i>
+                    
+
+                    
+                        Category
+                    
+                
+            </li>
+        
+    
+
+    
+    
+        <li><a href='/categories/java-ee'>Java EE</a></li>
+    
+</ul>
+
+    </footer>
+</article>
+
+        
+            <article class="post">
+    <header>
+    <div class="title">
+        
+            <h2><a href="https://www.bleathem.ca/blog/from-svn-to-mercurial-the-hg-rises/">From svn to mercurial, the hg rises!</a></h2>
+        
+        
+    </div>
+    <div class="meta">
+        
+
+        <time class="published"
+            datetime='2010-04-09'>
+            April 9, 2010</time>
+        <span class="author">Brian Leathem</span>
+        
+            <p>4 minute read</p>
+        
+        
+    </div>
+</header>
+
+    
+    
+
+    
+        
+        
+
+
+
+
+    
+
+
+        
+
+        <a href="https://www.bleathem.ca/blog/from-svn-to-mercurial-the-hg-rises/" class="image featured">
+            <img src="/" alt="" />
+        </a>
+    
+
+
+    <p>I&rsquo;ve been toying with the idea of moving from svn to a distributed version control system (dvcs) for a long time. I held back, hoping the mercurial (hg) vs. git &ldquo;war&rdquo; would declare a winner, but as major projects started adopting the two dvcs&rsquo;s, it became apparent to me that neither tool was going to disappear anytime soon. This notion was cemented for me when I read a forum post saying hg = git &gt;&gt; svnThat settled it.</p>
+
+    <footer>
+        <ul class="actions">
+            <li><a href="https://www.bleathem.ca/blog/from-svn-to-mercurial-the-hg-rises/" class="button big">Continue Reading</a></li>
+        </ul>
+        <ul class="stats">
+    
+        
+
+        
+        
+            <li>
+                
+                
+                    
+
+                    
+
+                    
+                        <i class="fa fa-sitemap">&nbsp;</i>
+                    
+
+                    
+                        Category
+                    
+                
+            </li>
+        
+    
+
+    
+    
+        <li><a href='/categories/tools'>Tools</a></li>
+    
+</ul>
+
+    </footer>
+</article>
+
+        
+            <article class="post">
+    <header>
+    <div class="title">
+        
+            <h2><a href="https://www.bleathem.ca/blog/glassfish-v2-and-v3-on-the-same-host-behind-mod_jk/">Glassfish V2 and V3 on the same host, behind mod_jk</a></h2>
+        
+        
+    </div>
+    <div class="meta">
+        
+
+        <time class="published"
+            datetime='2010-01-20'>
+            January 20, 2010</time>
+        <span class="author">Brian Leathem</span>
+        
+            <p>4 minute read</p>
+        
+        
+    </div>
+</header>
+
+    
+    
+
+    
+        
+        
+
+
+
+
+    
+
+
+        
+
+        <a href="https://www.bleathem.ca/blog/glassfish-v2-and-v3-on-the-same-host-behind-mod_jk/" class="image featured">
+            <img src="/" alt="" />
+        </a>
+    
+
+
+    <p>I&rsquo;ve jumped on the JavaEE 6 bandwagon, with one application already in production. The developer productivity improvements in JavaEE6/Glassfish V3 are tremendous. The only downside is that I still have some JavaEE 5 applications in production. The JavaEE 5 apps can&rsquo;t migrate to JavaEE 6 until Icefaces supports JSF 1.2.
+One workaround to this is to bundle the JSF 1.2 implementation with your application, then configure the classloader using the sun-web.</p>
+
+    <footer>
+        <ul class="actions">
+            <li><a href="https://www.bleathem.ca/blog/glassfish-v2-and-v3-on-the-same-host-behind-mod_jk/" class="button big">Continue Reading</a></li>
+        </ul>
+        <ul class="stats">
+    
+        
+
+        
+        
+            <li>
+                
+                
+                    
+
+                    
+
+                    
+                        <i class="fa fa-sitemap">&nbsp;</i>
+                    
+
+                    
+                        Category
+                    
+                
+            </li>
+        
+    
+
+    
+    
+        <li><a href='/categories/java-ee'>Java EE</a></li>
+    
+</ul>
+
+    </footer>
+</article>
+
+        
+            <article class="post">
+    <header>
+    <div class="title">
+        
+            <h2><a href="https://www.bleathem.ca/blog/in-the-beginning/">In the beginning...</a></h2>
+        
+        
+    </div>
+    <div class="meta">
+        
+
+        <time class="published"
+            datetime='2009-11-14'>
+            November 14, 2009</time>
+        <span class="author">Brian Leathem</span>
+        
+            <p>1 minute read</p>
+        
+        
+    </div>
+</header>
+
+    
+    
+
+    
+        
+        
+
+
+
+
+    
+
+
+        
+
+        <a href="https://www.bleathem.ca/blog/in-the-beginning/" class="image featured">
+            <img src="/" alt="" />
+        </a>
+    
+
+
+    <p>Ok, this is my blog. I&rsquo;m not sure how I will use it, for the most part it will just be a place where I can organize my thoughts and ideas about Java development. Maybe it will be useful for others, but probably not!</p>
+
+    <footer>
+        <ul class="actions">
+            <li><a href="https://www.bleathem.ca/blog/in-the-beginning/" class="button big">Continue Reading</a></li>
+        </ul>
+        <ul class="stats">
+    
+
+    
     
 </ul>
 
@@ -517,8 +1092,7 @@ ga('send', 'pageview');
     
 
     
-        <li><a href="/blog/page/10/"
-                class="button big next">Next Page</a></li>
+        <li><a href="#" class="disabled button big next">Next Page</a></li>
     
 </ul>
 

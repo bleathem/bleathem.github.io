@@ -59,6 +59,24 @@
     </item>
     
     <item>
+      <title>Write Powerful JavaScript Modules to Make Your Apps Dry</title>
+      <link>https://www.bleathem.ca/talk-list/2016-devnation/write-powerful-javascript-modules/</link>
+      <pubDate>Wed, 29 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bleathem.ca/talk-list/2016-devnation/write-powerful-javascript-modules/</guid>
+      <description>Large-scale Javascript applications benefit from a modular approach that let code be reused both within the application and across repeated implementations. In this session, we&amp;rsquo;ll look at the modular approach used to build reusable Javascript modules in the Red Hat mobile field workforce management application (WFM) showcased in this year&amp;rsquo;s Summit middleware keynote demo. Reusable modules for WFM are packaged as node package manager (npm) modules, providing a consistent format for both server and client sides using Node.</description>
+    </item>
+    
+    <item>
+      <title>Developer Meet Designer</title>
+      <link>https://www.bleathem.ca/talk-list/2016-devnation/developer-meet-designer/</link>
+      <pubDate>Tue, 28 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bleathem.ca/talk-list/2016-devnation/developer-meet-designer/</guid>
+      <description>This presentation will take developers behind the scenes of the Keynote Demo to showcase how designers and a developers work together to achieve outstanding results. In this presentation, we&amp;rsquo;ll identify the gap between designers and developers, and walk you through an actual example of how to build bridges that increase trust in your products. You&amp;rsquo;ll learn about: - UX basics - Design within open source communities - Understanding the problems between developers and designers - The advantages (and disadvantages) of working with a designer - Coping with common pitfalls and false assumptions - Specific CSS and JS techniques used during the Keynote demo visualization You&amp;rsquo;ll leave knowing that UX goes beyond the UI, with a better understanding of why working with a designer is important, and how to work together successfully.</description>
+    </item>
+    
+    <item>
       <title>Error handling in a request/response model with the mediator pattern</title>
       <link>https://www.bleathem.ca/blog/error-handling-in-a-request/response-model-with-the-mediator-pattern/</link>
       <pubDate>Mon, 19 Oct 2015 00:00:00 +0000</pubDate>
@@ -86,6 +104,16 @@
       <guid>https://www.bleathem.ca/blog/rx.js-session-at-devnation/</guid>
       <description>I presented a Session on Rx.js at DevNation this year. My goal was to impress upon the audience how Observables can be interpreted as a collection-in-time. This analogy was very well described by @jhusain his Async Javascript at Netflix talk that initially got me excited about Reactive Functional programming. My contribution to this idea is to present it in a visual way.
  To visualize both a &#34;regular&#34; collection, as well as a collection-in-time, I used the d3.</description>
+    </item>
+    
+    <item>
+      <title>Transform your web applications with reactive functional programming</title>
+      <link>https://www.bleathem.ca/talk-list/2015-devnation/reactive/</link>
+      <pubDate>Tue, 23 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bleathem.ca/talk-list/2015-devnation/reactive/</guid>
+      <description>Reactive programming is poised to be a breakthrough on the scale of object-oriented programming. Once you learn reactive techniques, you will combine streams of events in exciting new ways and wonder how you ever lived without this technique.
+Reactive functional programming allows us to manage callback and client state in asynchronous JavaScript code by structuring our complex asynchronous applications as a composition of very simple functions. The result is simpler, more maintainable code.</description>
     </item>
     
     <item>
@@ -217,6 +245,17 @@
     </item>
     
     <item>
+      <title>Hands on with the jQuery UI widget factory</title>
+      <link>https://www.bleathem.ca/talk-list/2014-devnation/jquery-ui-widgets/</link>
+      <pubDate>Tue, 15 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bleathem.ca/talk-list/2014-devnation/jquery-ui-widgets/</guid>
+      <description>The jQuery UI widget factory provides a mechanism to develop stateful jQuery plug-ins. Defining a plug-in lifecycle allows the removal of excessive boilerplate code.
+In this session, we will:
+ Learn how to develop jQuery plug-ins using the jQuery UI widget factory. Explore the widget factory lifecycle, with a focus on creating visual plug-ins (widgets). Discuss best practices in widget development. Explore some pitfalls of developing stateful widgets. Incorporate a responsive design into widgets using the Bootstrap 3 CSS library, which allows widgets to adapt to mobile phones, tablets, and desktop displays.</description>
+    </item>
+    
+    <item>
       <title>RichFaces Security Advisory CVE-2014-0335</title>
       <link>https://www.bleathem.ca/blog/richfaces-security-advisory-cve-2014-0335/</link>
       <pubDate>Fri, 11 Apr 2014 00:00:00 +0000</pubDate>
@@ -333,6 +372,15 @@
       
       <guid>https://www.bleathem.ca/blog/spoke-on-polyglot-widgets-at-jaxconf-2013/</guid>
       <description>This week I attended the JAXConf 2013 conference for a third year in a row. This year JAXConf was held in Santa Clara, the heart of silicon valley. The conference once again had a fantastic line up of speakers, with well recognized industry leaders speaking on a variety of current and exciting topics. Unfortunately, JAX continued this year to be one of the best kept secrets of the tech industry on the West coast, with attendance not being as strong as many would have liked.</description>
+    </item>
+    
+    <item>
+      <title>Poly-framework Web applications with Java EE</title>
+      <link>https://www.bleathem.ca/talk-list/2013-jaxconf/polyframework-webapps/</link>
+      <pubDate>Wed, 05 Jun 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bleathem.ca/talk-list/2013-jaxconf/polyframework-webapps/</guid>
+      <description>A significant impediment in considering the shift to a new web technology is the question of how to best manage the existing investment in your applications while taking advantage of the improvements offered by new web development approaches. The good news is a full rewrite of your web UI is not the only answer! You can successfully deliver a “poly-framework” web application implemented with multiple web frameworks while preserving a consistent experience for your end-users.</description>
     </item>
     
     <item>
@@ -503,6 +551,34 @@ div(alert alert-info). To try out this release: You can download the distributio
     </item>
     
     <item>
+      <title>Leverage jQuery Plugins To Create JSF Components</title>
+      <link>https://www.bleathem.ca/talk-list/2012-javaone/jsf-components/</link>
+      <pubDate>Thu, 04 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bleathem.ca/talk-list/2012-javaone/jsf-components/</guid>
+      <description>JavaServer Faces provides application developers with a visual component model for building web applications, standardized as part of the Java EE specification. Component libraries such as RichFaces abstract away the javascript, allowing one to focus on building applications with a rich user experience without fiddling with complex javascript. However, if you want to provide your user with a rich web experience, and the functionality you need isn&amp;rsquo;t provided by an existing JSF component library, you can quite easily leverage existing javascript libraries to create your own JSF components.</description>
+    </item>
+    
+    <item>
+      <title>Mobile JSF with RichFaces</title>
+      <link>https://www.bleathem.ca/talk-list/2012-javaone/richfaces-mobile/</link>
+      <pubDate>Thu, 04 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bleathem.ca/talk-list/2012-javaone/richfaces-mobile/</guid>
+      <description>The mobile web is a hot topic; many developers are curious about how they can tap into this market while leveraging their existing skillset and technology investments. The good news is that as a JSF developer, you can make your application mobile by taking advantage of the mobile compatible components and other framework improvements introduced in RichFaces 4.1.
+The RichFaces &amp;ldquo;Kitchensink&amp;rdquo; quickstart will be used as a case study to demonstrate best practices in making RichFaces applications mobile compatible.</description>
+    </item>
+    
+    <item>
+      <title>Testing JSF Applications With Arquillian And Selenium</title>
+      <link>https://www.bleathem.ca/talk-list/2012-javaone/testing-jsf/</link>
+      <pubDate>Thu, 04 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bleathem.ca/talk-list/2012-javaone/testing-jsf/</guid>
+      <description>In modern development environments, it’s a “must” to include testing of web applications as a standard part of the development life-cycle. Such tests can also be used as acceptance criteria in enterprise projects. While full-automation is possible, it is considered to be very expensive. As a result, in projects where testing is included as part of the project plan, it is also often the first requirement cut when the project schedule begins to slip.</description>
+    </item>
+    
+    <item>
       <title>JSF-Testing Session at Java One</title>
       <link>https://www.bleathem.ca/blog/jsf-testing-session-at-java-one/</link>
       <pubDate>Fri, 28 Sep 2012 00:00:00 +0000</pubDate>
@@ -533,6 +609,25 @@ Indeed this was one of my preferred aspects to JAX conf.</description>
     </item>
     
     <item>
+      <title>Leverage jQuery Plugins To Create JSF Components</title>
+      <link>https://www.bleathem.ca/talk-list/2012-jaxconf/jsf-components/</link>
+      <pubDate>Tue, 10 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bleathem.ca/talk-list/2012-jaxconf/jsf-components/</guid>
+      <description>JavaServer Faces provides application developers with a visual component model for building web applications, standardized as part of the Java EE specification. Components libraries such as RichFaces abstract away the javascript details, allowing one to focus on building applications with a rich user experience without fiddling with complex javascript. However, if you want to provide your user with a rich web experience, and the functionality you need isn’t provided by an existing JSF component library, you can quite easily leverage existing javascript libraries to create your own JSF components.</description>
+    </item>
+    
+    <item>
+      <title>Mobile JSF with RichFaces</title>
+      <link>https://www.bleathem.ca/talk-list/2012-jaxconf/richfaces-mobile/</link>
+      <pubDate>Mon, 09 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bleathem.ca/talk-list/2012-jaxconf/richfaces-mobile/</guid>
+      <description>The mobile web is a hot topic; many developers are curious about how they can tap into this market whilst leveraging their existing skillset and technology investments. The good news is that as a JSF developer, you can make your application mobile by taking advantage of the mobile compatible components and other framework improvements introduced in RichFaces 4.1.
+The RichFaces Mobile Showcase will be used as a case study to demonstrate best practices in making RichFaces applications mobile compatible.</description>
+    </item>
+    
+    <item>
       <title>JBW-2012 and RichFaces Mobile</title>
       <link>https://www.bleathem.ca/blog/jbw-2012-and-richfaces-mobile/</link>
       <pubDate>Mon, 02 Jul 2012 00:00:00 +0000</pubDate>
@@ -540,6 +635,25 @@ Indeed this was one of my preferred aspects to JAX conf.</description>
       <guid>https://www.bleathem.ca/blog/jbw-2012-and-richfaces-mobile/</guid>
       <description>I just returned from an excellent trip to the &amp;ldquo;Red Hat Summit/JBoss World&amp;rdquo;:http://www.redhat.com/summit/ in Boston. The event was fantastic, kicking off with a great &amp;ldquo;keynote&amp;rdquo;:http://www.redhat.com/summit/sessions/keynotes-sessions.html#12345 demoing &amp;ldquo;Drools&amp;rdquo;:http://www.jboss.org/drools/ in a Mobile scenario. Following the keynote were a number of great sessions, including one I presented on the topic of &amp;ldquo;Mobile RichFaces Applications&amp;rdquo;:http://www.redhat.com/summit/sessions/jboss.html#187.
 The session was well received, with some good discussion afterwards. In the session I motivated mobile web applications as a must-have in today&amp;rsquo;s market - users&amp;rsquo; will want and expect a functional web application even if your native application is better.</description>
+    </item>
+    
+    <item>
+      <title>Going Mobile with your RichFaces Applications</title>
+      <link>https://www.bleathem.ca/talk-list/2012-jbw/richfaces-mobile/</link>
+      <pubDate>Thu, 28 Jun 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bleathem.ca/talk-list/2012-jbw/richfaces-mobile/</guid>
+      <description>The mobile web is a hot topic as many developers are curious about how they can tap into this market while leveraging their existing skill-sets and technology investments. The good news is that as a JavaServer Faces (JSF) developer, you can make your application mobile by taking advantage of the mobile-compatible components and other framework improvements introduced in RichFaces 4.1.
+In this session, Brian Leathem, RichFaces project lead, will use the RichFaces Mobile Showcase as a case study to demonstrate best practices in making RichFaces applications mobile compatible.</description>
+    </item>
+    
+    <item>
+      <title>Leverage jQuery Plugins To Create JSF Components</title>
+      <link>https://www.bleathem.ca/talk-list/2012-judcon/jsf-components-lightning/</link>
+      <pubDate>Mon, 25 Jun 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bleathem.ca/talk-list/2012-judcon/jsf-components-lightning/</guid>
+      <description>JavaServer Faces provides application developers with a visual component model for building web applications, standardized as part of the Java EE specification. Component libraries such as RichFaces abstract away the javascript, allowing one to focus on building applications with a rich user experience without fiddling with complex javascript. However, if you want to provide your user with a rich web experience, and the functionality you need isn&amp;rsquo;t provided by an existing JSF component library, you can quite easily leverage existing javascript libraries to create your own JSF components.</description>
     </item>
     
     <item>
@@ -775,6 +889,24 @@ First Milestone for 4.1 The 4.1.0 Milestone1 release includes several highly ant
       <description>(cross posted from :http://community.jboss.org/people/bleathem/blog/2011/06/20/seam-faces-302final-released)
 Great news, Seam Faces 3.0.2.Final has been released! It is available for download via the JBoss Nexus repository. Primarily a bug fix release, Seam Faces 3.0.2.Final resolves some compatibility issues with MyFaces, thanks to contributions from Christian Kaltepoth. Additionally, José Freitas has contributed some fixes to issues with the UIInputContainer. A full list of the bugs fixed is available here.
 I&amp;rsquo;m very excited about the community involvement in this release, and with more community members coming forward with features they&amp;rsquo;d like to see implemented/improved.</description>
+    </item>
+    
+    <item>
+      <title>Realize the full potential of JSF with Seam Faces and CDI</title>
+      <link>https://www.bleathem.ca/talk-list/2011-jaxconf/seamfaces/</link>
+      <pubDate>Wed, 22 Jun 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bleathem.ca/talk-list/2011-jaxconf/seamfaces/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Realize the full potential of JSF with Seam Faces and CDI</title>
+      <link>https://www.bleathem.ca/talk-list/2011-judcon/seamfaces/</link>
+      <pubDate>Mon, 02 May 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bleathem.ca/talk-list/2011-judcon/seamfaces/</guid>
+      <description></description>
     </item>
     
     <item>
