@@ -528,12 +528,6 @@
   </url>
   
   <url>
-    <loc>https://www.bleathem.ca/categories/</loc>
-    <lastmod>2017-10-03T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://www.bleathem.ca/tags/accordion/</loc>
     <lastmod>2013-01-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -637,7 +631,6 @@
   
   <url>
     <loc>https://www.bleathem.ca/categories/</loc>
-    <lastmod>2017-10-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -761,13 +754,19 @@
   
   <url>
     <loc>https://www.bleathem.ca/tags/glassfish/</loc>
-    <lastmod>2010-01-20T00:00:00+00:00</lastmod>
+    <lastmod>2010-07-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.bleathem.ca/tags/glassfish/</loc>
-    <lastmod>2010-07-15T00:00:00+00:00</lastmod>
+    <lastmod>2010-01-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.bleathem.ca/tags/go/</loc>
+    <lastmod>2017-10-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -786,6 +785,12 @@
   <url>
     <loc>https://www.bleathem.ca/tags/haml/</loc>
     <lastmod>2012-05-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.bleathem.ca/tags/hugo/</loc>
+    <lastmod>2017-10-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -850,14 +855,14 @@
   </url>
   
   <url>
-    <loc>https://www.bleathem.ca/tags/javascript/</loc>
-    <lastmod>2015-01-26T00:00:00+00:00</lastmod>
+    <loc>https://www.bleathem.ca/categories/javascript/</loc>
+    <lastmod>2015-10-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.bleathem.ca/categories/javascript/</loc>
-    <lastmod>2015-10-19T00:00:00+00:00</lastmod>
+    <loc>https://www.bleathem.ca/tags/javascript/</loc>
+    <lastmod>2015-01-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -868,14 +873,14 @@
   </url>
   
   <url>
-    <loc>https://www.bleathem.ca/tags/mobile/</loc>
-    <lastmod>2012-07-13T00:00:00+00:00</lastmod>
+    <loc>https://www.bleathem.ca/categories/mobile/</loc>
+    <lastmod>2015-02-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.bleathem.ca/categories/mobile/</loc>
-    <lastmod>2015-02-05T00:00:00+00:00</lastmod>
+    <loc>https://www.bleathem.ca/tags/mobile/</loc>
+    <lastmod>2012-07-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1000,13 +1005,13 @@
   </url>
   
   <url>
-    <loc>https://www.bleathem.ca/tags/richfaces/</loc>
+    <loc>https://www.bleathem.ca/categories/richfaces/</loc>
     <lastmod>2015-01-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.bleathem.ca/categories/richfaces/</loc>
+    <loc>https://www.bleathem.ca/tags/richfaces/</loc>
     <lastmod>2015-01-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -1030,13 +1035,13 @@
   </url>
   
   <url>
-    <loc>https://www.bleathem.ca/tags/seam/</loc>
+    <loc>https://www.bleathem.ca/categories/seam/</loc>
     <lastmod>2011-09-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.bleathem.ca/categories/seam/</loc>
+    <loc>https://www.bleathem.ca/tags/seam/</loc>
     <lastmod>2011-09-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -1103,7 +1108,7 @@
   
   <url>
     <loc>https://www.bleathem.ca/categories/tools/</loc>
-    <lastmod>2012-05-15T00:00:00+00:00</lastmod>
+    <lastmod>2017-10-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
