@@ -18,7 +18,7 @@
 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="generator" content="Hugo 0.27.1" />
+        <meta name="generator" content="Hugo 0.33" />
         
 
 
@@ -40,7 +40,7 @@
 
 
 
-<meta property="og:updated_time" content="2015-10-19T00:00:00&#43;00:00"/>
+<meta property="og:updated_time" content="2018-01-18T00:00:00&#43;00:00"/>
 
 
 
@@ -104,7 +104,7 @@ ga('send', 'pageview');
     
 <header id="header">
     
-      <h1><a href="/">Javascript</a></h1>
+      <h1><a href="/">categories</a></h1>
     
 
     <nav class="links">
@@ -246,6 +246,18 @@ ga('send', 'pageview');
                 
                         <article class="mini-post">
                             <header>
+                                <h3><a href="https://www.bleathem.ca/blog/timing-of-reducing-actions-with-redux-observable/">Timing of reducing Actions with Redux Observable</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2018-01-18'>
+                                    January 18, 2018</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
                                 <h3><a href="https://www.bleathem.ca/blog/and-now-hugo/">And Now Hugo</a></h3>
                                 
                                 <time class="published" datetime=
@@ -279,41 +291,6 @@ ga('send', 'pageview');
 
                         </article>
                 
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="https://www.bleathem.ca/blog/patternfly-roadmap-update/">Patternfly Roadmap Update</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2017-05-30'>
-                                    May 30, 2017</time>
-                            </header>
-                            
-    
-
-    
-        
-        
-
-
-
-
-
-
-    
-
-
-        
-        
-        
-
-        <a href="https://www.bleathem.ca/blog/patternfly-roadmap-update/" class="image featured">
-            <img src="/" alt="">
-        </a>
-    
-
-
-                        </article>
-                
 
                 
                     <a href=
@@ -333,6 +310,72 @@ ga('send', 'pageview');
     <div id="main">
         <h1>Javascript</h1>
         
+        
+            <article class="post">
+    <header>
+    <div class="title">
+        
+            <h2><a href="https://www.bleathem.ca/blog/timing-of-reducing-actions-with-redux-observable/">Timing of reducing Actions with Redux Observable</a></h2>
+        
+        
+    </div>
+    <div class="meta">
+        
+
+        <time class="published"
+            datetime='2018-01-18'>
+            January 18, 2018</time>
+        <span class="author">Brian Leathem</span>
+        
+            <p>5 minute read</p>
+        
+        
+    </div>
+</header>
+
+    
+
+    <p>In this post I will describe the flow of actions through a Redux application configured with redux-observable middleware. Specifically, what happens when a redux-observable epic emits a sequence of actions, and those actions in turn trigger epics that emit more actions. In what order is the resulting chain of actions reduced?
+Action flow with Redux Before answering this super-detailed question, let&rsquo;s review the flow of a dispatched action in a redux application using the diagram below:</p>
+
+    <footer>
+        <ul class="actions">
+            <li><a href="https://www.bleathem.ca/blog/timing-of-reducing-actions-with-redux-observable/" class="button big">Continue Reading</a></li>
+        </ul>
+        <ul class="stats">
+    
+        
+
+        
+        
+            <li>
+                
+                
+                    
+
+                    
+
+                    
+                        <i class="fa fa-sitemap">&nbsp;</i>
+                    
+
+                    
+                        Category
+                    
+                
+            </li>
+        
+    
+
+    
+    
+        <li><a href='/categories/javascript'>Javascript</a></li>
+    
+</ul>
+
+    </footer>
+</article>
+
         
             <article class="post">
     <header>
@@ -1151,97 +1194,6 @@ ga('send', 'pageview');
 </article>
 
         
-            <article class="post">
-    <header>
-    <div class="title">
-        
-            <h2><a href="https://www.bleathem.ca/blog/richfaces-4-cdk--jquery-ui-calendar/">RichFaces 4 CDK | jQuery UI Calendar</a></h2>
-        
-        
-    </div>
-    <div class="meta">
-        
-
-        <time class="published"
-            datetime='2011-10-07'>
-            October 7, 2011</time>
-        <span class="author">Brian Leathem</span>
-        
-            <p>4 minute read</p>
-        
-        
-    </div>
-</header>
-
-    
-    
-
-    
-        
-        
-
-
-
-
-
-
-    
-
-
-        
-        
-        
-
-        <a href="https://www.bleathem.ca/blog/richfaces-4-cdk--jquery-ui-calendar/" class="image featured">
-            <img src="/" alt="">
-        </a>
-    
-
-
-    <p>Further incrementing the complexity over the input component we created previously, this time we will create a JSF calendar component. Being pragmatic OSS developers, we will leverage the existing javascript of the datepicker component from the jQuery UI project, and we&rsquo;ll see how well the RichFaces CDK lends itself to mapping JSF component attributes into javascript configuration options.
-As always, if you are interested in following along in your IDE, you can get the code below on github.</p>
-
-    <footer>
-        <ul class="actions">
-            <li><a href="https://www.bleathem.ca/blog/richfaces-4-cdk--jquery-ui-calendar/" class="button big">Continue Reading</a></li>
-        </ul>
-        <ul class="stats">
-    
-        
-
-        
-        
-            <li>
-                
-                
-                    
-
-                    
-
-                    
-                        <i class="fa fa-sitemap">&nbsp;</i>
-                    
-
-                    
-                        Categories
-                    
-                
-            </li>
-        
-    
-
-    
-    
-        <li><a href='/categories/java-ee'>Java EE</a></li>
-    
-        <li><a href='/categories/javascript'>Javascript</a></li>
-    
-</ul>
-
-    </footer>
-</article>
-
-        
 
         
 <ul class="actions pagination">
@@ -1250,7 +1202,8 @@ As always, if you are interested in following along in your IDE, you can get the
     
 
     
-        <li><a href="#" class="disabled button big next">Next Page</a></li>
+        <li><a href="/categories/javascript/page/2/"
+                class="button big next">Next Page</a></li>
     
 </ul>
 
@@ -1378,6 +1331,20 @@ As always, if you are interested in following along in your IDE, you can get the
           <article class="mini-post">
             <header>
               <h3>
+                <a href="https://www.bleathem.ca/blog/timing-of-reducing-actions-with-redux-observable/">Timing of reducing Actions with Redux Observable</a>
+              </h3>
+              
+              <time class="published" datetime='2018-01-18'>
+                January 18, 2018
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
                 <a href="https://www.bleathem.ca/blog/and-now-hugo/">And Now Hugo</a>
               </h3>
               
@@ -1405,43 +1372,6 @@ As always, if you are interested in following along in your IDE, you can get the
         
 
         <a href="https://www.bleathem.ca/blog/and-now-hugo/" class="image featured">
-            <img src="/" alt="">
-        </a>
-    
-
-
-          </article>
-        
-          <article class="mini-post">
-            <header>
-              <h3>
-                <a href="https://www.bleathem.ca/blog/patternfly-roadmap-update/">Patternfly Roadmap Update</a>
-              </h3>
-              
-              <time class="published" datetime='2017-05-30'>
-                May 30, 2017
-              </time>
-            </header>
-            
-    
-
-    
-        
-        
-
-
-
-
-
-
-    
-
-
-        
-        
-        
-
-        <a href="https://www.bleathem.ca/blog/patternfly-roadmap-update/" class="image featured">
             <img src="/" alt="">
         </a>
     
@@ -1503,7 +1433,7 @@ As always, if you are interested in following along in your IDE, you can get the
             <header>
               
                 <a href="/categories/javascript/">Javascript</a>
-                <span style="float:right;">10</span>
+                <span style="float:right;">11</span>
               
             </header>
           </article>
@@ -1667,7 +1597,7 @@ As always, if you are interested in following along in your IDE, you can get the
     
     <p class="copyright">
       
-        &copy; 2017
+        &copy; 2018
         
           Experiences of a developer
         

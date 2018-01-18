@@ -10,7 +10,7 @@
 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="generator" content="Hugo 0.27.1" />
+        <meta name="generator" content="Hugo 0.33" />
         
 
 
@@ -32,7 +32,7 @@
 
 
 
-<meta property="og:updated_time" content="2017-10-03T00:00:00&#43;00:00"/>
+<meta property="og:updated_time" content="2018-01-18T00:00:00&#43;00:00"/>
 
 
 
@@ -243,6 +243,18 @@ ga('send', 'pageview');
                 
                         <article class="mini-post">
                             <header>
+                                <h3><a href="https://www.bleathem.ca/blog/timing-of-reducing-actions-with-redux-observable/">Timing of reducing Actions with Redux Observable</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2018-01-18'>
+                                    January 18, 2018</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
                                 <h3><a href="https://www.bleathem.ca/blog/and-now-hugo/">And Now Hugo</a></h3>
                                 
                                 <time class="published" datetime=
@@ -276,41 +288,6 @@ ga('send', 'pageview');
 
                         </article>
                 
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="https://www.bleathem.ca/blog/patternfly-roadmap-update/">Patternfly Roadmap Update</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2017-05-30'>
-                                    May 30, 2017</time>
-                            </header>
-                            
-    
-
-    
-        
-        
-
-
-
-
-
-
-    
-
-
-        
-        
-        
-
-        <a href="https://www.bleathem.ca/blog/patternfly-roadmap-update/" class="image featured">
-            <img src="/" alt="">
-        </a>
-    
-
-
-                        </article>
-                
 
                 
                     <a href=
@@ -333,7 +310,7 @@ ga('send', 'pageview');
   <header>
     <div class="title">
         
-            <h2><a href="https://www.bleathem.ca/blog/and-now-hugo/">And Now Hugo</a></h2>
+            <h2><a href="https://www.bleathem.ca/blog/timing-of-reducing-actions-with-redux-observable/">Timing of reducing Actions with Redux Observable</a></h2>
         
         
     </div>
@@ -341,11 +318,11 @@ ga('send', 'pageview');
         
 
         <time class="published"
-            datetime='2017-10-03'>
-            October 3, 2017</time>
+            datetime='2018-01-18'>
+            January 18, 2018</time>
         <span class="author">Brian Leathem</span>
         
-            <p>2 minute read</p>
+            <p>5 minute read</p>
         
         
     </div>
@@ -355,53 +332,231 @@ ga('send', 'pageview');
   
 
   
-    
-
-    
-        
-        
-
-
-
-
-
-
-    
-
-
-        
-        
-        
-
-        <a href="https://www.bleathem.ca/blog/and-now-hugo/" class="image featured">
-            <img src="/" alt="">
-        </a>
-    
-
 
   <div id="content">
-    <div class="paragraph">
-<p>It seems like just yesterday that I found myself <a href="http://www.bleathem.ca/blog/2012/05/im-awestruct.html">awestruck with awestruct</a>, and yet here I am today reviving my blog with a new site building tool called <a href="https://gohugo.io/">Hugo</a>.  The motivation for this was two-fold.</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>My awestruct/Asciidoctor gem configuration had fallen out of date, and needed some TLC to get working again.</p>
-</li>
-<li>
-<p>I wanted to learn <a href="http://golang.org">Go</a>.</p>
-</li>
+    
+
+<p>In this post I will describe the flow of actions through a <a href="https://redux.js.org/">Redux</a> application configured with <a href="https://redux-observable.js.org/">redux-observable</a> middleware.  Specifically, what happens when a redux-observable epic emits a sequence of actions, and those actions in turn trigger epics that emit more actions.  In what order is the resulting chain of actions reduced?</p>
+
+<h2 id="action-flow-with-redux">Action flow with Redux</h2>
+
+<p>Before answering this super-detailed question, let&rsquo;s review the flow of a dispatched action in a redux application using the diagram below:</p>
+
+
+<figure >
+    
+        <img src="/img/blog/2018/observable-redux-action-timing__redux-diagram.png" />
+    
+    
+    <figcaption>
+        <h4>Redux Action Flow</h4>
+        
+    </figcaption>
+    
+</figure>
+
+
+<p>In a typical React/Redux application, the flow looks like:</p>
+
+<ol>
+<li>A component dispatches an action</li>
+<li>The action is reduced, and the state in the store is updated</li>
+<li>The UI receives the updated state</li>
 </ol>
-</div>
-<div class="paragraph">
-<p>While I&#8217;ve successfully migrated my blog/site to hugo, I have not managed to realize goal 2 and learn about Go in the process!  If anything this speaks well of the Hugo project, and the degree to which they&#8217;ve abstracted away the site building aspects when working with the tool.</p>
-</div>
-<div class="paragraph">
-<p>The mirgration process was fairly straightforward.  The most time consuming part was converting some older <a href="https://en.wikipedia.org/wiki/Textile_(markup_language)">textile</a> formatted posts into markdown. The <a href="https://pandoc.org/">Pandoc</a> tool proved to be quite useful with migrating the textile.  There are a few holes left, but the converted markdown redners successfully.  For my more recent posts authored with <a href="https://en.wikipedia.org/wiki/AsciiDoc">Asciidoc</a>, I was able to take advantage of the Hugo / <a href="http://asciidoctor.org/">Asciidoctor</a> integration.  All I had to do was prepend appropriate YAML frontmatter to my asciidoc files.</p>
-</div>
-<div class="paragraph">
-<p>If you are looking for a site building tool yourself, I can highly recommend Hugo.  It is indeed <a href="https://github.com/bep/hugo-benchmark">incredibly fast</a>, has a rich and expressive <a href="https://gohugo.io/templates/">templating mechanism</a>, and a rich ecosystem of <a href="https://themes.gohugo.io/">themes available</a>.  I chose the <a href="https://github.com/jpescador/hugo-future-imperfect">hugo-future-imperfect</a>, which I plan to fiddle with and customize over the coming months.</p>
-</div>
+
+<p>When we introduce the redux-observable middleware, we can observe the stream of actions and dispatch new actions: action in, actiopn out.  These new actions are in turn reduced and the store updated, in the same manner as actions dispatched from components.  The redux-observale term for this pattern is an <em>epic</em>.  The epic pattern extends the action flow in the above diagram with the steps shaded in gray:</p>
+
+<ol start="4">
+<li>The epic observes the action and the updated state
+<li>The epic dispatched one or more actions
+</ol>
+
+<p>The canonical use case for an epic is to fetch data asynchronously.  For example, the epic can:</p>
+
+<ul>
+<li>Observe FETCH_USER actions</li>
+<li>Initiate the asynchronous data retrieval</li>
+<li>Then dispatch a FETCH_USER_FULFILLED action with the returned data.</li>
+</ul>
+
+<p>Such an epic might look like:</p>
+
+<pre><code class="language-js">import { ajax } from 'rxjs/observable/dom/ajax';
+
+// action creators
+const fetchUser = username =&gt; ({ type: FETCH_USER, payload: username });
+const fetchUserFulfilled = payload =&gt; ({ type: FETCH_USER_FULFILLED, payload });
+
+// epic
+const fetchUserEpic = action$ =&gt;
+  action$.ofType(FETCH_USER)
+    .mergeMap(action =&gt; ajax.getJSON(`https://api.github.com/users/${action.payload}`))
+    .map(response =&gt; fetchUserFulfilled(response));
+</code></pre>
+
+<p>This is all well documented in the <a href="https://redux.js.org/docs/advanced/Middleware.html">redux-middleware</a> and <a href="https://redux-observable.js.org/docs/basics/Epics.html">redux-observale</a> docs, from where I grabbed the above code snippet.</p>
+
+<h2 id="dispatching-multiple-actions">Dispatching multiple actions</h2>
+
+<p>Sometimes you want to dispatch multiple Actions from an epic.  For instance what if you want to both update the UI with the returned data, and trigger a subsequent async data retrieval.  In this scenario we can change the epic to return an Observable of actions rather than a single action, as in:</p>
+
+<pre><code class="language-js">const fetchUserEpic = action$ =&gt;
+  action$.ofType(FETCH_USER)
+    .mergeMap(action =&gt; ajax.getJSON(`https://api.github.com/users/${action.payload}`))
+    .mergeMap(response =&gt; [
+       fetchUserFulfilled(response),  // update the store with the returned data
+       fetchAdditionalUserData() // An action to fetch the accounts of a user
+    );
+</code></pre>
+
+<p>In working with the above pattern, I came to a point where I wanted to know the order in which such a sequence of Actions was reduced.  Consider the following scenario:</p>
+
+<ol>
+<li>Dispatch an action <code>ACTION_1</code></li>
+<li>Reduce <code>ACTION_1</code></li>
+<li>Trigger an epic</li>
+<li>Dispatch an array of actions from the epic [ <code>ACTION_2</code>, <code>ACTION_3</code>]</li>
+<li>Invoke the reducer for <code>ACTION_2</code></li>
+<li>Trigger an epic</li>
+<li>Dispatch another array of actions from this epic [ <code>ACTION_1b</code>, <code>ACTION_2b</code>, <code>ACTION_3b</code> ]</li>
+<li>&hellip; reduce an action, but witch action will be reduced next ???</li>
+</ol>
+
+<p>I came up with two possible scenarios:</p>
+
+<p><strong>Scenario 1</strong>: The next action dispatched <code>ACTION_3</code> will be reduced, followed by the subsequently dispatched actions <code>ACTION_1b</code>, <code>ACTION_2b</code>, <code>ACTION_3b</code>.</p>
+
+<p><strong>Scenario 2</strong>: <code>ACTION_2</code> and all it&rsquo;s dispatched actions will be reduced, before proceeding the <code>ACTION_3</code>.</p>
+
+<p>The easiest way to answer this question is with some code that implements the above sequence of steps:</p>
+
+<pre><code class="language-js">import { createStore, applyMiddleware, compose, combineReducers } from 'redux';
+import { createEpicMiddleware, combineEpics } from 'redux-observable';
+
+const makeActionCreator = (type, ...argNames) =&gt; {
+    return function (...args) {
+        console.log('Creating action', type, args[0]);
+        const action = { type };
+        argNames.forEach((arg, index) =&gt; {
+            action[argNames[index]] = args[index];
+        });
+        return action;
+    };
+}
+
+enum Actions {
+    ACTION_1 = 'ACTION_1',
+    ACTION_2 = 'ACTION_2',
+    ACTION_3 = 'ACTION_3',
+    ACTION_1B = 'ACTION_1b',
+    ACTION_2B = 'ACTION_2b',
+    ACTION_3B = 'ACTION_3b'
+}
+
+const dispatchAction1 = makeActionCreator(Actions.ACTION_1, &quot;value&quot;);
+const dispatchAction2 = makeActionCreator(Actions.ACTION_2, &quot;value&quot;);
+const dispatchAction3 = makeActionCreator(Actions.ACTION_3, &quot;value&quot;);
+const dispatchAction1b = makeActionCreator(Actions.ACTION_1B, &quot;value&quot;);
+const dispatchAction2b = makeActionCreator(Actions.ACTION_2B, &quot;value&quot;);
+const dispatchAction3b = makeActionCreator(Actions.ACTION_3B, &quot;value&quot;);
+
+const testReducer = (state = {}, action) =&gt; {
+
+    switch (action.type) {
+        case Actions.ACTION_1:
+            console.log('Reducing action 1');
+            return {
+                ...state,
+                value1: action.value
+            }
+        case Actions.ACTION_2:
+            console.log('Reducing action 2');
+            return {
+                ...state,
+                value2: action.value
+            }
+        case Actions.ACTION_3:
+            console.log('Reducing action 3');
+            return {
+                ...state,
+                value3: action.value
+            }
+        case Actions.ACTION_1B:
+            console.log('Reducing action 1b');
+            return {
+                ...state,
+                value1b: action.value
+            }
+        case Actions.ACTION_2B:
+            console.log('Reducing action 2b');
+            return {
+                ...state,
+                value2b: action.value
+            }
+        case Actions.ACTION_3B:
+            console.log('Reducing action 3b');
+            return {
+                ...state,
+                value3b: action.value
+            }
+    }
+    return state;
+}
+
+const action1Epic = (action$, store) =&gt;
+    action$.ofType(Actions.ACTION_1)
+    .mergeMap(action =&gt; [
+        dispatchAction2(&quot;From 1&quot;),
+        dispatchAction3(&quot;From 1&quot;)
+    ]);
+
+const action2Epic = (action$, store) =&gt;
+    action$.ofType(Actions.ACTION_2)
+    .mergeMap(action =&gt; [
+        dispatchAction1b(&quot;From 2&quot;),
+        dispatchAction2b(&quot;From 2&quot;),
+        dispatchAction3b(&quot;From 2&quot;)
+    ]);
+
+
+const testEpics = combineEpics(action1Epic, action2Epic);
+
+const epicMiddleware = createEpicMiddleware(testEpics);
+const testStore = createStore(
+    testReducer,
+    applyMiddleware(epicMiddleware)
+);
+
+// Dispatch the first action
+testStore.dispatch(dispatchAction1(&quot;From the top.&quot;));
+</code></pre>
+
+<p>On running this code snippet we can inspect the console log to see the order in which the actions were dispatched and reduced:</p>
+
+<pre><code class="language-none">Creating action ACTION_1 From the top.
+test-epics.ts:35 Reducing action 1
+test-epics.ts:6 Creating action ACTION_2 From 1
+test-epics.ts:6 Creating action ACTION_3 From 1
+test-epics.ts:41 Reducing action 2
+test-epics.ts:6 Creating action ACTION_1b From 2
+test-epics.ts:6 Creating action ACTION_2b From 2
+test-epics.ts:6 Creating action ACTION_3b From 2
+test-epics.ts:53 Reducing action 1b
+test-epics.ts:59 Reducing action 2b
+test-epics.ts:65 Reducing action 3b
+test-epics.ts:47 Reducing action 3
+explorer-redux.ts:224 fetching dna api routes for test
+</code></pre>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>From this output we can see <code>ACTION_1b</code>, <code>ACTION_2b</code>, and <code>ACTION_3b</code> are all reduced before <code>ACTION_3</code>.  We can conclude that <em>Scenario 2</em> is correct:</p>
+
+<blockquote>
+<p>When a sequence of actions is dispatched from an epic, each action will be reduced along with any synchronously dispatched actions from observing epics, prior to reducing subsequent actions in the initial sequence.</p>
+</blockquote>
+
+<p>Understanding what&rsquo;s happening here is by no means necessary to incorporate redux-observable in your application, but hopefully my documentation of this behavior proves useful to someone.  If so, please let me know in the comments!</p>
 
   </div>
 
@@ -433,7 +588,7 @@ ga('send', 'pageview');
 
     
     
-        <li><a href='/categories/tools'>Tools</a></li>
+        <li><a href='/categories/javascript'>Javascript</a></li>
     
 </ul>
 
@@ -441,8 +596,8 @@ ga('send', 'pageview');
 </article>
 <ul class="actions pagination">
     
-        <li><a href="https://www.bleathem.ca/blog/patternfly-roadmap-update/"
-                class="button big previous">Patternfly Roadmap Update</a></li>
+        <li><a href="https://www.bleathem.ca/blog/and-now-hugo/"
+                class="button big previous">And Now Hugo</a></li>
     
 
     
@@ -460,7 +615,7 @@ ga('send', 'pageview');
 
 
 <li>
-  <a href="//twitter.com/share?url=https%3a%2f%2fwww.bleathem.ca%2fblog%2fand-now-hugo%2f&text=And%20Now%20Hugo&via=brianleathem" target="_blank" class="share-btn twitter">
+  <a href="//twitter.com/share?url=https%3a%2f%2fwww.bleathem.ca%2fblog%2ftiming-of-reducing-actions-with-redux-observable%2f&text=Timing%20of%20reducing%20Actions%20with%20Redux%20Observable&via=brianleathem" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
     </a>
@@ -468,7 +623,7 @@ ga('send', 'pageview');
 
 
 <li>
-  <a href="//plus.google.com/share?url=https%3a%2f%2fwww.bleathem.ca%2fblog%2fand-now-hugo%2f" target="_blank" class="share-btn google-plus">
+  <a href="//plus.google.com/share?url=https%3a%2f%2fwww.bleathem.ca%2fblog%2ftiming-of-reducing-actions-with-redux-observable%2f" target="_blank" class="share-btn google-plus">
     <i class="fa fa-google-plus"></i>
     <p>Google+</p>
   </a>
@@ -476,7 +631,7 @@ ga('send', 'pageview');
 
 
 <li>
-  <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.bleathem.ca%2fblog%2fand-now-hugo%2f" target="_blank" class="share-btn facebook">
+  <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.bleathem.ca%2fblog%2ftiming-of-reducing-actions-with-redux-observable%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
     </a>
@@ -484,7 +639,7 @@ ga('send', 'pageview');
 
 
 <li>
-  <a href="//reddit.com/submit?url=https%3a%2f%2fwww.bleathem.ca%2fblog%2fand-now-hugo%2f&title=And%20Now%20Hugo" target="_blank" class="share-btn reddit">
+  <a href="//reddit.com/submit?url=https%3a%2f%2fwww.bleathem.ca%2fblog%2ftiming-of-reducing-actions-with-redux-observable%2f&title=Timing%20of%20reducing%20Actions%20with%20Redux%20Observable" target="_blank" class="share-btn reddit">
     <i class="fa fa-reddit-alien"></i>
     <p>Reddit</p>
   </a>
@@ -492,7 +647,7 @@ ga('send', 'pageview');
 
 
 <li>
-  <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fwww.bleathem.ca%2fblog%2fand-now-hugo%2f&title=And%20Now%20Hugo" target="_blank" class="share-btn linkedin">
+  <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fwww.bleathem.ca%2fblog%2ftiming-of-reducing-actions-with-redux-observable%2f&title=Timing%20of%20reducing%20Actions%20with%20Redux%20Observable" target="_blank" class="share-btn linkedin">
       <i class="fa fa-linkedin"></i>
       <p>LinkedIn</p>
     </a>
@@ -500,7 +655,7 @@ ga('send', 'pageview');
 
 
 <li>
-  <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fwww.bleathem.ca%2fblog%2fand-now-hugo%2f&title=And%20Now%20Hugo" target="_blank" class="share-btn stumbleupon">
+  <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fwww.bleathem.ca%2fblog%2ftiming-of-reducing-actions-with-redux-observable%2f&title=Timing%20of%20reducing%20Actions%20with%20Redux%20Observable" target="_blank" class="share-btn stumbleupon">
     <i class="fa fa-stumbleupon"></i>
     <p>StumbleUpon</p>
   </a>
@@ -508,7 +663,7 @@ ga('send', 'pageview');
 
 
 <li>
-  <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fwww.bleathem.ca%2fblog%2fand-now-hugo%2f&description=And%20Now%20Hugo" target="_blank" class="share-btn pinterest">
+  <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fwww.bleathem.ca%2fblog%2ftiming-of-reducing-actions-with-redux-observable%2f&description=Timing%20of%20reducing%20Actions%20with%20Redux%20Observable" target="_blank" class="share-btn pinterest">
     <i class="fa fa-pinterest-p"></i>
     <p>Pinterest</p>
   </a>
@@ -516,7 +671,7 @@ ga('send', 'pageview');
 
 
 <li>
-  <a href="mailto:?subject=Check out this post by Brian%20Leathem&body=https%3a%2f%2fwww.bleathem.ca%2fblog%2fand-now-hugo%2f" target="_blank" class="share-btn email">
+  <a href="mailto:?subject=Check out this post by Brian%20Leathem&body=https%3a%2f%2fwww.bleathem.ca%2fblog%2ftiming-of-reducing-actions-with-redux-observable%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
   </a>
@@ -651,6 +806,20 @@ ga('send', 'pageview');
           <article class="mini-post">
             <header>
               <h3>
+                <a href="https://www.bleathem.ca/blog/timing-of-reducing-actions-with-redux-observable/">Timing of reducing Actions with Redux Observable</a>
+              </h3>
+              
+              <time class="published" datetime='2018-01-18'>
+                January 18, 2018
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
                 <a href="https://www.bleathem.ca/blog/and-now-hugo/">And Now Hugo</a>
               </h3>
               
@@ -678,43 +847,6 @@ ga('send', 'pageview');
         
 
         <a href="https://www.bleathem.ca/blog/and-now-hugo/" class="image featured">
-            <img src="/" alt="">
-        </a>
-    
-
-
-          </article>
-        
-          <article class="mini-post">
-            <header>
-              <h3>
-                <a href="https://www.bleathem.ca/blog/patternfly-roadmap-update/">Patternfly Roadmap Update</a>
-              </h3>
-              
-              <time class="published" datetime='2017-05-30'>
-                May 30, 2017
-              </time>
-            </header>
-            
-    
-
-    
-        
-        
-
-
-
-
-
-
-    
-
-
-        
-        
-        
-
-        <a href="https://www.bleathem.ca/blog/patternfly-roadmap-update/" class="image featured">
             <img src="/" alt="">
         </a>
     
@@ -776,7 +908,7 @@ ga('send', 'pageview');
             <header>
               
                 <a href="/categories/javascript/">Javascript</a>
-                <span style="float:right;">10</span>
+                <span style="float:right;">11</span>
               
             </header>
           </article>
@@ -940,7 +1072,7 @@ ga('send', 'pageview');
     
     <p class="copyright">
       
-        &copy; 2017
+        &copy; 2018
         
           Experiences of a developer
         

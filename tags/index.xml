@@ -311,7 +311,7 @@
     <item>
       <title>Glassfish</title>
       <link>https://www.bleathem.ca/tags/glassfish/</link>
-      <pubDate>Thu, 15 Jul 2010 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 20 Jan 2010 00:00:00 +0000</pubDate>
       
       <guid>https://www.bleathem.ca/tags/glassfish/</guid>
       <description></description>
@@ -320,7 +320,7 @@
     <item>
       <title>Glassfish</title>
       <link>https://www.bleathem.ca/tags/glassfish/</link>
-      <pubDate>Wed, 20 Jan 2010 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 15 Jul 2010 00:00:00 +0000</pubDate>
       
       <guid>https://www.bleathem.ca/tags/glassfish/</guid>
       <description></description>
@@ -462,6 +462,15 @@
     </item>
     
     <item>
+      <title>Javascript</title>
+      <link>https://www.bleathem.ca/tags/javascript/</link>
+      <pubDate>Thu, 18 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bleathem.ca/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Mediator</title>
       <link>https://www.bleathem.ca/tags/mediator/</link>
       <pubDate>Mon, 19 Oct 2015 00:00:00 +0000</pubDate>
@@ -494,6 +503,15 @@
       <pubDate>Tue, 07 Aug 2012 00:00:00 +0000</pubDate>
       
       <guid>https://www.bleathem.ca/tags/myfaces/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Observable</title>
+      <link>https://www.bleathem.ca/tags/observable/</link>
+      <pubDate>Thu, 18 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bleathem.ca/tags/observable/</guid>
       <description></description>
     </item>
     
@@ -615,6 +633,15 @@
     </item>
     
     <item>
+      <title>React</title>
+      <link>https://www.bleathem.ca/tags/react/</link>
+      <pubDate>Thu, 18 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bleathem.ca/tags/react/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Red Hat</title>
       <link>https://www.bleathem.ca/tags/red-hat/</link>
       <pubDate>Tue, 07 Jul 2015 00:00:00 +0000</pubDate>
@@ -629,6 +656,15 @@
       <pubDate>Mon, 02 Jul 2012 00:00:00 +0000</pubDate>
       
       <guid>https://www.bleathem.ca/tags/red-hat-summit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Redux</title>
+      <link>https://www.bleathem.ca/tags/redux/</link>
+      <pubDate>Thu, 18 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bleathem.ca/tags/redux/</guid>
       <description></description>
     </item>
     

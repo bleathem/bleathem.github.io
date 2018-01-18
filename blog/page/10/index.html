@@ -16,7 +16,7 @@
 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="generator" content="Hugo 0.27.1" />
+        <meta name="generator" content="Hugo 0.33" />
         
 
 
@@ -38,7 +38,7 @@
 
 
 
-<meta property="og:updated_time" content="2013-09-17T00:00:00&#43;00:00"/>
+<meta property="og:updated_time" content="2009-11-14T00:00:00&#43;00:00"/>
 
 
 
@@ -65,9 +65,9 @@
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
             <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800,900|Source+Sans+Pro:400,700">
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css" />
-            <link rel="stylesheet" href="/css/main.css">
-            <link rel="stylesheet" href="/css/add-on.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css">
+            <link rel="stylesheet" href="https://www.bleathem.ca/css/main.css">
+            <link rel="stylesheet" href="https://www.bleathem.ca/css/add-on.css">
         
 
         
@@ -75,7 +75,7 @@
                 
             
                 
-                    <link rel="stylesheet" href="/css/style.css">
+                    <link rel="stylesheet" href="https://www.bleathem.ca/css/style.css">
                 
             
         
@@ -102,9 +102,7 @@ ga('send', 'pageview');
     
 <header id="header">
     
-      
-          <h1><a href="/">blog</a></h1>
-      
+      <h1><a href="/">blog</a></h1>
     
 
     <nav class="links">
@@ -125,6 +123,12 @@ ga('send', 'pageview');
                 <li>
                     <a href="/blog/">
                             <i class="fa fa-newspaper-o">&nbsp;</i>Blog
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/talk-list/">
+                            <i class="fa fa-list">&nbsp;</i>Talks
                     </a>
                 </li>
             
@@ -166,7 +170,7 @@ ga('send', 'pageview');
         <section>
             <form class="search" method="get" action="//google.com/search">
                 <input type="text" name="q" placeholder="Search" />
-                <input type="hidden" name="q" value="site:https://www.bleathem.ca/">
+                <input type="hidden" name="as_sitesearch" value="https://www.bleathem.ca/">
             </form>
         </section>
 
@@ -199,6 +203,14 @@ ga('send', 'pageview');
                     </li>
                 
                     <li>
+                        <a href="/talk-list/">
+                            <h3>
+                                <i class="fa fa-list">&nbsp;</i>Talks
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
                         <a href="/categories/">
                             <h3>
                                 <i class="fa fa-sitemap">&nbsp;</i>Categories
@@ -218,25 +230,74 @@ ga('send', 'pageview');
         </section>
 
     
-        <section>
-            <ul class="links">
+        <section id="recent-posts">
+            <div class="mini-posts">
                 <header>
                     <h3>Recent Posts</h3>
                 </header>
+                
+
                 
                     
                 
 
                 
-                    <li>
-                        <a href="https://www.bleathem.ca/blog/and-now-hugo/"><p>And Now Hugo</p></a>
-                    </li>
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://www.bleathem.ca/blog/timing-of-reducing-actions-with-redux-observable/">Timing of reducing Actions with Redux Observable</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2018-01-18'>
+                                    January 18, 2018</time>
+                            </header>
+                            
+
+                        </article>
                 
-                    <li>
-                        <a href="https://www.bleathem.ca/blog/patternfly-roadmap-update/"><p>Patternfly Roadmap Update</p></a>
-                    </li>
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://www.bleathem.ca/blog/and-now-hugo/">And Now Hugo</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2017-10-03'>
+                                    October 3, 2017</time>
+                            </header>
+                            
+    
+
+    
+        
+        
+
+
+
+
+
+
+    
+
+
+        
+        
+        
+
+        <a href="https://www.bleathem.ca/blog/and-now-hugo/" class="image featured">
+            <img src="/" alt="">
+        </a>
+    
+
+
+                        </article>
                 
-            </ul>
+
+                
+                    <a href=
+                        
+                            /blog/
+                        
+                        class="button">View more posts</a>
+                
+            </div>
         </section>
 
     
@@ -251,7 +312,7 @@ ga('send', 'pageview');
     <header>
     <div class="title">
         
-            <h2><a href="https://www.bleathem.ca/blog/richfaces-4.3.4.final-release-announcement/">RichFaces 4.3.4.Final Release Announcement</a></h2>
+            <h2><a href="https://www.bleathem.ca/blog/in-the-beginning/">In the beginning...</a></h2>
         
         
     </div>
@@ -259,11 +320,11 @@ ga('send', 'pageview');
         
 
         <time class="published"
-            datetime='2013-09-17'>
-            September 17, 2013</time>
+            datetime='2009-11-14'>
+            November 14, 2009</time>
         <span class="author">Brian Leathem</span>
         
-            <p>4 minute read</p>
+            <p>1 minute read</p>
         
         
     </div>
@@ -279,228 +340,31 @@ ga('send', 'pageview');
 
 
 
+
+
     
 
 
         
+        
+        
 
-        <a href="https://www.bleathem.ca/blog/richfaces-4.3.4.final-release-announcement/" class="image featured">
-            <img src="/" alt="" />
+        <a href="https://www.bleathem.ca/blog/in-the-beginning/" class="image featured">
+            <img src="/" alt="">
         </a>
     
 
 
-    <p>I am excited to announce the release of RichFaces 4.3.4.Final. This 4th minor release of the RichFaces 4.3 release series is conservative in scope focusing on providing bug fixes to our stable release branch while we concurrently work on RichFaces 5.
- To try out this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom.xml to 4.3.4.Final. For more information on setting up a RichFaces 4 application, refer to our getting started guide.</p>
+    <p>Ok, this is my blog. I&rsquo;m not sure how I will use it, for the most part it will just be a place where I can organize my thoughts and ideas about Java development. Maybe it will be useful for others, but probably not!</p>
 
     <footer>
         <ul class="actions">
-            <li><a href="https://www.bleathem.ca/blog/richfaces-4.3.4.final-release-announcement/" class="button big">Continue Reading</a></li>
+            <li><a href="https://www.bleathem.ca/blog/in-the-beginning/" class="button big">Continue Reading</a></li>
         </ul>
         <ul class="stats">
     
-        
-
-        
-        
-            <li>
-                
-                
-                    
-
-                    
-
-                    
-                        <i class="fa fa-sitemap">&nbsp;</i>
-                    
-
-                    
-                        Categories
-                    
-                
-            </li>
-        
-    
 
     
-    
-        <li><a href='/categories/java-ee'>Java EE</a></li>
-    
-        <li><a href='/categories/richfaces'>RichFaces</a></li>
-    
-</ul>
-
-    </footer>
-</article>
-
-        
-            <article class="post">
-    <header>
-    <div class="title">
-        
-            <h2><a href="https://www.bleathem.ca/blog/richfaces-security-advisory-cve-2013-2165/">RichFaces Security Advisory CVE-2013-2165</a></h2>
-        
-        
-    </div>
-    <div class="meta">
-        
-
-        <time class="published"
-            datetime='2013-07-16'>
-            July 16, 2013</time>
-        <span class="author">Brian Leathem</span>
-        
-            <p>2 minute read</p>
-        
-        
-    </div>
-</header>
-
-    
-    
-
-    
-        
-        
-
-
-
-
-    
-
-
-        
-
-        <a href="https://www.bleathem.ca/blog/richfaces-security-advisory-cve-2013-2165/" class="image featured">
-            <img src="/" alt="" />
-        </a>
-    
-
-
-    <p>We have fixed a security vulnerability in RichFaces 3, 4 and 5. Details of the vulnerability can be found in this Red Hat Errata document released for our WFK product. We have released community micro releases addressing this vulnerability, so please update your applications ASAP. Read below for a summary of the problem and an explanation of how to use the fix in your applications.
- Download RichFaces 3.</p>
-
-    <footer>
-        <ul class="actions">
-            <li><a href="https://www.bleathem.ca/blog/richfaces-security-advisory-cve-2013-2165/" class="button big">Continue Reading</a></li>
-        </ul>
-        <ul class="stats">
-    
-        
-
-        
-        
-            <li>
-                
-                
-                    
-
-                    
-
-                    
-                        <i class="fa fa-sitemap">&nbsp;</i>
-                    
-
-                    
-                        Categories
-                    
-                
-            </li>
-        
-    
-
-    
-    
-        <li><a href='/categories/java-ee'>Java EE</a></li>
-    
-        <li><a href='/categories/richfaces'>RichFaces</a></li>
-    
-</ul>
-
-    </footer>
-</article>
-
-        
-            <article class="post">
-    <header>
-    <div class="title">
-        
-            <h2><a href="https://www.bleathem.ca/blog/richfaces-5.0.0.alpha1-release-announcement/">RichFaces 5.0.0.Alpha1 Release Announcement</a></h2>
-        
-        
-    </div>
-    <div class="meta">
-        
-
-        <time class="published"
-            datetime='2013-06-14'>
-            June 14, 2013</time>
-        <span class="author">Brian Leathem</span>
-        
-            <p>4 minute read</p>
-        
-        
-    </div>
-</header>
-
-    
-    
-
-    
-        
-        
-
-
-
-
-    
-
-
-        
-
-        <a href="https://www.bleathem.ca/blog/richfaces-5.0.0.alpha1-release-announcement/" class="image featured">
-            <img src="/" alt="" />
-        </a>
-    
-
-
-    <p>I am excited to announce the release of RichFaces 5.0.0.Alpha1. While RichFaces 5.0.0.Alpha1 is an incredibly significant release (with almost all aspects of the framework seeing some changes) the release is in fact functionally equivalent to RichFaces 4.3.2.Final. So go ahead an try it out, and give us your feedback!
- To try out this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom.</p>
-
-    <footer>
-        <ul class="actions">
-            <li><a href="https://www.bleathem.ca/blog/richfaces-5.0.0.alpha1-release-announcement/" class="button big">Continue Reading</a></li>
-        </ul>
-        <ul class="stats">
-    
-        
-
-        
-        
-            <li>
-                
-                
-                    
-
-                    
-
-                    
-                        <i class="fa fa-sitemap">&nbsp;</i>
-                    
-
-                    
-                        Categories
-                    
-                
-            </li>
-        
-    
-
-    
-    
-        <li><a href='/categories/java-ee'>Java EE</a></li>
-    
-        <li><a href='/categories/richfaces'>RichFaces</a></li>
     
 </ul>
 
@@ -517,8 +381,7 @@ ga('send', 'pageview');
     
 
     
-        <li><a href="/blog/page/11/"
-                class="button big next">Next Page</a></li>
+        <li><a href="#" class="disabled button big next">Next Page</a></li>
     
 </ul>
 
@@ -526,266 +389,318 @@ ga('send', 'pageview');
     
 <section id="sidebar">
 
+  
+  <section id="intro">
     
-        <section id="intro">
+    
+      
+        <a href="/" class="logo"><img src="/img/main/bleathem.png" alt="Brian Leathem" /></a>
+      
+    
+    
+      <header>
+        <h2>Experiences of a developer</h2>
+        <p>A journal of my journey through code.</p>
+      </header>
+    
+    
+      <ul class="icons">
+        
+          <li>
+            <a href="https://www.bleathem.ca/blog/index.xml" type="application/rss+xml" target="_blank" title="RSS" class="fa fa-rss"></a>
+          </li>
+        
+        
+  <li><a href="//github.com/bleathem" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+  <li><a href="//stackoverflow.com/users/264797" target="_blank" title="Stack Overflow" class="fa fa-stack-overflow"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//linkedin.com/in/bleathem" target="_blank" title="LinkedIn" class="fa fa-linkedin"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//plus.google.com/+BrianLeathem" target="_blank" title="Google+" class="fa fa-google-plus"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//twitter.com/brianleathem" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </ul>
+    
+  </section>
+
+  
+  <section id="recent-posts">
+    <div class="mini-posts">
+      <header>
+        <h3>Recent Posts</h3>
+      </header>
+      <div class="posts-container">
+        
+
+        
+          
+        
+
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="https://www.bleathem.ca/blog/timing-of-reducing-actions-with-redux-observable/">Timing of reducing Actions with Redux Observable</a>
+              </h3>
+              
+              <time class="published" datetime='2018-01-18'>
+                January 18, 2018
+              </time>
+            </header>
             
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="https://www.bleathem.ca/blog/and-now-hugo/">And Now Hugo</a>
+              </h3>
+              
+              <time class="published" datetime='2017-10-03'>
+                October 3, 2017
+              </time>
+            </header>
             
-                
-                    <a href="/" class="logo"><img src="/img/main/bleathem.png" alt="Brian Leathem" /></a>
-                
-            
-            
-                <header>
-                    <h2>Experiences of a developer</h2>
-                    <p>A journal of my journey through code.</p>
-                </header>
-            
-            <ul class="icons">
-                
-                    <li><a href="https://www.bleathem.ca/blog/index.xml" type="application/rss+xml"
-                        target="_blank" title="RSS" class="fa fa-rss"></a></li>
-                
-                
-                    
-<li><a href="//github.com/bleathem" target="_blank" title="GitHub" class="fa fa-github"></a></li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<li><a href="//linkedin.com/in/bleathem" target="_blank" title="LinkedIn" class="fa fa-linkedin"></a></li>
-
-
-
-
-
-<li><a href="//stackoverflow.com/users/264797" target="_blank" title="Stack Overflow" class="fa fa-stack-overflow"></a></li>
-
-
-
-
-
-
-
-<li><a href="//plus.google.com/+BrianLeathem" target="_blank" title="Google+" class="fa fa-google-plus"></a></li>
-
-
-
-
-
-<li><a href="//twitter.com/brianleathem" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
-
-
-
-
-                
-            </ul>
-        </section>
-
-    
-        <section id="recent-posts">
-            <ul class="posts">
-                <header>
-                    <h3>Recent Posts</h3>
-                </header>
-                
-
-                
-                    
-                
-
-                
-                    <li>
-                        <article>
-                            <header>
-                                <h3><a href="https://www.bleathem.ca/blog/and-now-hugo/">And Now Hugo</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2017-10-03'>
-                                    October 3, 2017</time>
-                            </header>
-                        </article>
-                    </li>
-                
-                    <li>
-                        <article>
-                            <header>
-                                <h3><a href="https://www.bleathem.ca/blog/patternfly-roadmap-update/">Patternfly Roadmap Update</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2017-05-30'>
-                                    May 30, 2017</time>
-                            </header>
-                        </article>
-                    </li>
-                
-
-                
-                    <li>
-                        <ul class="actions">
-                            <li><a href=
-                            
-                                /blog/
-                            
-                            class="button">View more posts</a></li>
-                        </ul>
-                    </li>
-                
-            </ul>
-        </section>
-
-    
-    
-    
-    
-        <section id="categories">
-            <ul class="posts">
-                <header>
-                    <h3><a href="/categories/">Categories</a></h3>
-                </header>
-
-                
-                    
-                
-
-                
-                    <li>
-                        <article>
-                            <header>
-                                <a href="/categories/java-ee/">Java EE</a>
-                                <span style="float:right;">77</span>
-                            </header>
-                        </article>
-                    </li>
-                
-                    <li>
-                        <article>
-                            <header>
-                                <a href="/categories/richfaces/">RichFaces</a>
-                                <span style="float:right;">55</span>
-                            </header>
-                        </article>
-                    </li>
-                
-                    <li>
-                        <article>
-                            <header>
-                                <a href="/categories/javascript/">Javascript</a>
-                                <span style="float:right;">10</span>
-                            </header>
-                        </article>
-                    </li>
-                
-                    <li>
-                        <article>
-                            <header>
-                                <a href="/categories/conferences/">Conferences</a>
-                                <span style="float:right;">8</span>
-                            </header>
-                        </article>
-                    </li>
-                
-                    <li>
-                        <article>
-                            <header>
-                                <a href="/categories/seam/">Seam</a>
-                                <span style="float:right;">5</span>
-                            </header>
-                        </article>
-                    </li>
-                
-                    <li>
-                        <article>
-                            <header>
-                                <a href="/categories/patternfly/">PatternFly</a>
-                                <span style="float:right;">3</span>
-                            </header>
-                        </article>
-                    </li>
-                
-                    <li>
-                        <article>
-                            <header>
-                                <a href="/categories/mobile/">Mobile</a>
-                                <span style="float:right;">2</span>
-                            </header>
-                        </article>
-                    </li>
-                
-                    <li>
-                        <article>
-                            <header>
-                                <a href="/categories/tools/">Tools</a>
-                                <span style="float:right;">2</span>
-                            </header>
-                        </article>
-                    </li>
-                
-                    <li>
-                        <article>
-                            <header>
-                                <a href="/categories//"></a>
-                                <span style="float:right;">1</span>
-                            </header>
-                        </article>
-                    </li>
-                
-            </ul>
-        </section>
     
 
     
         
-        <section class="blurb">
-            <h2>About</h2>
-            <p>Brian Leathem is a Principal Software Engineer at Red Hat as the technical architect for the PatternFly project, in the User Experience and Design team. Working as a developer in a UXD team, Brian strives to bridge the world of designers and developers by adapting his engineering experiences to help solve modern user experience and design challenges.</p>
-
-            <ul class="actions">
-                <li><a href="/about/" class="button">Learn More</a></li>
-            </ul>
-        </section>
         
 
+
+
+
+
+
     
-        <section id="footer">
-            <ul class="icons">
-                
-                    <li><a href="https://www.bleathem.ca/blog/index.xml" type="application/rss+xml"
-                        target="_blank" title="RSS" class="fa fa-rss"></a></li>
-                
-                
-                    
-<li><a href="//github.com/bleathem" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+        
+        
+        
+
+        <a href="https://www.bleathem.ca/blog/and-now-hugo/" class="image featured">
+            <img src="/" alt="">
+        </a>
+    
+
+
+          </article>
+        
+      </div>
+
+      
+        <a href=
+          
+            /blog/
+          
+        class="button">View more posts</a>
+      
+    </div>
+  </section>
+
+  
+  
+  
+  
+    <section id="categories">
+      <header>
+        <h3>
+          <a href="/categories/">Categories</a>
+        </h3>
+      </header>
+        
+          
+        
+
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/java-ee/">Java EE</a>
+                <span style="float:right;">77</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/richfaces/">RichFaces</a>
+                <span style="float:right;">55</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/javascript/">Javascript</a>
+                <span style="float:right;">11</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/conferences/">Conferences</a>
+                <span style="float:right;">8</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/seam/">Seam</a>
+                <span style="float:right;">5</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/patternfly/">PatternFly</a>
+                <span style="float:right;">3</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/tools/">Tools</a>
+                <span style="float:right;">3</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/mobile/">Mobile</a>
+                <span style="float:right;">2</span>
+              
+            </header>
+          </article>
+        </p>
+        
+    </section>
+  
+
+  
+  
+    <section id="mini-bio">
+      <h3>About</h1>
+      <p>Brian Leathem is a Principal Software Engineer at Red Hat as the technical architect for the PatternFly project, in the User Experience and Design team. Working as a developer in a UXD team, Brian strives to bridge the world of designers and developers by adapting his engineering experiences to help solve modern user experience and design challenges.</p>
+      <a href="/about/" class="button">Learn More</a>
+    </section>
+  
+
+  
+  <section id="footer">
+    
+      <ul class="icons">
+        
+          <li>
+            <a href="https://www.bleathem.ca/blog/index.xml" type="application/rss+xml" target="_blank" title="RSS" class="fa fa-rss"></a>
+          </li>
+        
+        
+  <li><a href="//github.com/bleathem" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+  <li><a href="//stackoverflow.com/users/264797" target="_blank" title="Stack Overflow" class="fa fa-stack-overflow"></a></li>
 
 
 
@@ -807,6 +722,19 @@ ga('send', 'pageview');
 
 
 
+  <li><a href="//linkedin.com/in/bleathem" target="_blank" title="LinkedIn" class="fa fa-linkedin"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//plus.google.com/+BrianLeathem" target="_blank" title="Google+" class="fa fa-google-plus"></a></li>
 
 
 
@@ -821,13 +749,6 @@ ga('send', 'pageview');
 
 
 
-<li><a href="//linkedin.com/in/bleathem" target="_blank" title="LinkedIn" class="fa fa-linkedin"></a></li>
-
-
-
-
-
-<li><a href="//stackoverflow.com/users/264797" target="_blank" title="Stack Overflow" class="fa fa-stack-overflow"></a></li>
 
 
 
@@ -835,48 +756,62 @@ ga('send', 'pageview');
 
 
 
-<li><a href="//plus.google.com/+BrianLeathem" target="_blank" title="Google+" class="fa fa-google-plus"></a></li>
+  <li><a href="//twitter.com/brianleathem" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
 
 
 
 
 
-<li><a href="//twitter.com/brianleathem" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
 
 
 
 
-                
-            </ul>
 
-            <p class="copyright">&copy; 2017 Experiences of a developer. Powered by <a href="//gohugo.io" target="_blank">Hugo</a></p>
-        </section>
 
+
+
+
+      </ul>
+    
+    <p class="copyright">
+      
+        &copy; 2018
+        
+          Experiences of a developer
+        
+      .
+      Powered by <a href="//gohugo.io" target="_blank">Hugo</a>
+    </p>
+  </section>
 </section>
 
-      </div>
-      <a id="back-to-top" href="#" class="fa fa-arrow-up fa-border fa-2x"></a>
-      
+</div>
+<a id="back-to-top" href="#" class="fa fa-arrow-up fa-border fa-2x"></a>
+
+
+
+  
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
+  <script src="https://www.bleathem.ca/js/util.js"></script>
+  <script src="https://www.bleathem.ca/js/main.js"></script>
+  <script src="https://www.bleathem.ca/js/backToTop.js"></script>
+
+
+
 
       
-        
-      
+  
 
-      
-      
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
-        <script src="/js/util.js"></script>
-        <script src="/js/main.js"></script>
-        <script src="/js/backToTop.js"></script>
-      
 
-      
 
-      
-      <script>hljs.initHighlightingOnLoad();</script>
-    </body>
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
 </html>
 

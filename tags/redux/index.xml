@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Redux on Experiences of a developer</title>
+    <link>https://www.bleathem.ca/tags/redux/</link>
+    <description>Recent content in Redux on Experiences of a developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 18 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.bleathem.ca/tags/redux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Timing of reducing Actions with Redux Observable</title>
+      <link>https://www.bleathem.ca/blog/timing-of-reducing-actions-with-redux-observable/</link>
+      <pubDate>Thu, 18 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bleathem.ca/blog/timing-of-reducing-actions-with-redux-observable/</guid>
+      <description>In this post I will describe the flow of actions through a Redux application configured with redux-observable middleware. Specifically, what happens when a redux-observable epic emits a sequence of actions, and those actions in turn trigger epics that emit more actions. In what order is the resulting chain of actions reduced?
+Action flow with Redux Before answering this super-detailed question, let&amp;rsquo;s review the flow of a dispatched action in a redux application using the diagram below:</description>
+    </item>
+    
+  </channel>
+</rss>
