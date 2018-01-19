@@ -324,7 +324,7 @@ ga('send', 'pageview');
             January 18, 2018</time>
         <span class="author">Brian Leathem</span>
         
-            <p>5 minute read</p>
+            <p>6 minute read</p>
         
         
     </div>
@@ -332,8 +332,9 @@ ga('send', 'pageview');
 
     
 
-    <p>In this post I will describe the flow of actions through a Redux application configured with redux-observable middleware. Specifically, what happens when a redux-observable epic emits a sequence of actions, and those actions in turn trigger epics that emit more actions. In what order is the resulting chain of actions reduced?
-Action flow with Redux Before answering this super-detailed question, let&rsquo;s review the flow of a dispatched action in a redux application using the diagram below:</p>
+    <p>In this post I will describe the flow of actions through a Redux application configured with redux-observable middleware.
+In a Redux application, actions are dispatched and reduced synchronously, which makes it relatively straightforward to follow. However with redux-observable epics, we can introduces asynchronicity into the action flow when actions are dispatched as a result of asynchronous events.
+In this post we will look at what happens when a redux-observable epic emits a sequence of actions ([1,2,3]), and those actions in turn trigger epics that emit more actions (eg.</p>
 
     <footer>
         <ul class="actions">
