@@ -61,7 +61,7 @@ In this post we will look at what happens when a redux-observable epic emits a s
 
 <meta itemprop="datePublished" content="2018-01-18T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2018-01-18T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="1086">
+<meta itemprop="wordCount" content="1075">
 
 
 
@@ -493,8 +493,10 @@ const fetchUserFulfilled = payload =&gt; ({ type: FETCH_USER_FULFILLED, payload 
 // epic
 const fetchUserEpic = action$ =&gt;
   action$.ofType(FETCH_USER)
-    .mergeMap(action =&gt; ajax.getJSON(`https://api.github.com/users/${action.payload}`))
-    .map(response =&gt; fetchUserFulfilled(response));
+    .mergeMap(action =&gt;
+      ajax.getJSON(`https://api.github.com/users/${action.payload}`)
+        .map(response =&gt; fetchUserFulfilled(response))
+    );
 </code></pre>
 
 <p>This is all well documented in the <a href="https://redux.js.org/docs/advanced/Middleware.html">redux-middleware</a> and <a href="https://redux-observable.js.org/docs/basics/Epics.html">redux-observable</a> docs, from where I grabbed the above code snippet.</p>
@@ -505,10 +507,12 @@ const fetchUserEpic = action$ =&gt;
 
 <pre><code class="language-js">const fetchUserEpic = action$ =&gt;
   action$.ofType(FETCH_USER)
-    .mergeMap(action =&gt; ajax.getJSON(`https://api.github.com/users/${action.payload}`))
-    .mergeMap(response =&gt; [
-       fetchUserFulfilled(response),  // update the store with the returned data
-       fetchAdditionalUserData() // An action to fetch the accounts of a user
+    .mergeMap(action =&gt;
+      ajax.getJSON(`https://api.github.com/users/${action.payload}`)
+        .mergeMap(response =&gt; Observable.of(
+          fetchUserFulfilled(response),  // update the store with the returned data
+          fetchAdditionalUserData() // An action to fetch the accounts of a user
+        ))
     );
 </code></pre>
 
@@ -522,7 +526,7 @@ const fetchUserEpic = action$ =&gt;
 <li>Invoke the reducer for <code>ACTION_2</code></li>
 <li>Trigger an epic for <code>ACTION_2</code></li>
 <li>Dispatch a new action <code>ACTION_2a</code> from this epic</li>
-<li>Reduce an action, but which action will be reduced next: <code>ACTION_2b</code> or <code>ACTION_3</code> ???</li>
+<li>Reduce an action, but which action will be reduced next: <code>ACTION_2a</code> or <code>ACTION_3</code> ???</li>
 </ol>
 
 <p>There are two possible scenarios:</p>
@@ -603,26 +607,27 @@ const testReducer = (state = {}, action) =&gt; {
 
 const action1Epic = (action$, store) =&gt;
     action$.ofType(Actions.ACTION_1)
-    .mergeMap(action =&gt; [
+    .mergeMap(action =&gt; Observable.of(
         dispatchAction2(&quot;From 1&quot;),
         dispatchAction3(&quot;From 1&quot;)
-    ]);
+    ));
 
 const asyncEpic2 = (action$, store) =&gt;
     action$.ofType(Actions.ACTION_2)
-    .mapTo('async task from asyncEpic2')
-    // Comment out this line to make this epic synchronous
-    .observeOn(Scheduler.async)
-    .do(msg =&gt; console.log(msg))
-    .mapTo(dispatchAction2a(&quot;From 2&quot;));
+    .mergeMap(action =&gt;
+        Observable.of('async task from asyncEpic2')
+        .observeOn(Scheduler.async)
+        .do(msg =&gt; console.log(msg))
+        .mapTo(dispatchAction2a(&quot;From 2&quot;))
+    );
 
 const syncEpic3 = (action$, store) =&gt;
     action$.ofType(Actions.ACTION_3)
     .mergeMap(action =&gt;
         Observable.of('sync task from syncEpic3')
-    )
-    .do(msg =&gt; console.log(msg))
-    .mapTo(dispatchAction3a(&quot;From 3&quot;));
+        .do(msg =&gt; console.log(msg))
+        .mapTo(dispatchAction3a(&quot;From 3&quot;))
+    );
 
 const testEpics = combineEpics(action1Epic, asyncEpic2, syncEpic3);
 
@@ -645,7 +650,6 @@ Reducing action 2
 Reducing action 3
 sync task from syncEpic3
 Reducing action 3a
-Waiting for update signal from WDS...
 async task from asyncEpic2
 Reducing action 2a
 </code></pre>
