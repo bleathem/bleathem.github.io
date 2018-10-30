@@ -6,10 +6,20 @@
     <description>Recent content in Talk-list on Experiences of a developer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Jun 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 22 Oct 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.bleathem.ca/talk-list/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Optimizing Data Access For Frontend Use Cases With A Modular Api Gateway</title>
+      <link>https://www.bleathem.ca/talk-list/2018-ato/data-access-for-frontend-use-cases/</link>
+      <pubDate>Mon, 22 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bleathem.ca/talk-list/2018-ato/data-access-for-frontend-use-cases/</guid>
+      <description>The Netflix front-end ecosystem spans a wide variety of device types and a potentially long-lived lifetime for those devices. Providing enduring and scalable API endpoints to enable rich customer experiences across such a diverse landscape poses a unique set of challenges and constraints.
+In this session we will look at how we develop applications targeting use-case tailored endpoints in our API gateway. Leveraging node.js and a container-based approach, we expose customizable “bite-size” pieces of our API through application and device specific endpoints.</description>
+    </item>
     
     <item>
       <title>Write Powerful JavaScript Modules to Make Your Apps Dry</title>
